@@ -1,0 +1,158 @@
+.nav {
+	//
+	&--serviceTitle {
+		display: none;
+	}
+	//
+	input {
+		display: none;
+		//
+		&:checked~.nav--menu {
+			display: table;
+		}
+	}
+	//
+	&--button {
+		display: block;
+		margin: 10px auto;
+		width: 25px;
+		height: 20px;
+		border-top: 2px solid $color_1;
+		border-bottom: 2px solid $color_1;
+		cursor: pointer;
+		transition: 0.3s;
+		//
+		&::after {
+			content: '';
+			display: block;
+			height: 2px;
+			margin-top: 7px;
+			background: $color_1;
+			transition: 0.3s;
+		}
+		//
+		&:hover {
+			border-top: 2px solid $color_4;
+			border-bottom: 2px solid $color_4;
+			//
+			&::after {
+				background: $color_4;
+			}
+		}
+		//
+		@media (min-width: $sm) {
+			float: right;
+		}
+		@media (min-width: $md) {
+			display: none;
+		}
+	}
+	//
+	&--menu {
+		display: none;
+		position: relative;
+		left: 25px;
+		list-style: none;
+		margin: 15px auto 0 auto;
+		//
+		@media (min-width: $sm) {
+			margin: 35px 0 0 0;
+			float: right;
+		}
+		@media (min-width: $md) {
+			display: block;
+			float: right;
+			margin: 0;
+			left: 0;
+		}
+	}
+	&--menuItem {
+		margin-top: 10px;
+		//
+		&:last-child {
+			margin-right: 0;
+		}
+		//
+		@media (min-width: $md) {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		@media (min-width: $lg) {
+			margin-right: 40px;
+		}
+		@media (min-width: 1600px) {
+			margin-right: 70px;
+		}
+	}
+	&--menuLink {
+		font-size: 0.9rem;
+		color: $color_1 !important;
+		//
+		&:hover {
+			padding-bottom: 1px;
+			border-bottom: 3px solid $color_4;
+			//
+			@media (min-width: $md) {
+				padding-bottom: 24px;
+			}
+		}
+	}
+	&--menuCallSubmenu {
+		position: relative;
+		width: 110px;
+		//
+		&:hover .nav--submenu {
+			height: auto;
+			opacity: 1;
+		}
+		//
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			border: 4px solid transparent;
+			border-top: 4px solid $color_1;
+		}
+		//
+		&:hover {
+			&::after {
+				opacity: 0;
+			}
+		}
+		//
+		@media (min-width: $lg) {
+			width: 125px;
+		}
+	}
+	//
+	&--submenu {
+		position: relative;
+		z-index: 100;
+		left: -75px;
+		width: 250px;
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		list-style: none;
+		background: white;
+		transition: 1s;
+		//
+		@media (min-width: $md) {
+			position: absolute;
+			left: 0;
+		}
+		//
+		.nav--menuItem {
+			display: block;
+			margin-right: 0;
+		}
+		//
+		.nav--menuLink {
+			&:hover {
+				border: none;
+			}
+		}
+	}
+}

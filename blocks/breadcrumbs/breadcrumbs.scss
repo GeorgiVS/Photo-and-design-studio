@@ -1,0 +1,12 @@
+.breadcrumbs {
+	font-size: 0.7rem;
+	//
+	&--last {
+		color: #9e9e9e;
+		//
+		&::after {
+			content: '/';
+			margin: 0 5px;
+		}
+	}
+}

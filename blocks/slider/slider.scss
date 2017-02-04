@@ -1,0 +1,12 @@
+.slider {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	padding: 0;
+
+
+
+}

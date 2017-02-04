@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400');
+html,
+body {
+	height: 100%;
+	font-family: $font_1, sans-serif;
+	font-size: 85%;
+	line-height: 1.5rem;
+	color: $color_1;
+	margin: 0;
+	@media (min-width: $sm) {
+		font-size: 90%;
+	}
+	@media (min-width: $lg) {
+		font-size: 100%;
+	}
+}
+h1, h2, h3,h4, h5 {
+	line-height: 2.5rem;
+}
+a {
+	text-decoration: none !important;
+	text-transform: uppercase;
+	//
+	&:hover {
+		
+	}
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+}
