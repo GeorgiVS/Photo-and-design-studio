@@ -22,6 +22,7 @@
 	}
 	//
 	&--social {
+		z-index: 100;
 		//
 		@media (min-width: $xs) and (max-width: $sm - 1) {
 			float: left;
