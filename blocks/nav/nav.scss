@@ -75,7 +75,7 @@
 		//
 		@media (min-width: $md) {
 			display: inline-block;
-			margin-right: 10px;
+			margin-right: 15px;
 		}
 		@media (min-width: $lg) {
 			margin-right: 40px;
@@ -101,11 +101,6 @@
 		position: relative;
 		width: 110px;
 		//
-		&:hover .nav--submenu {
-			height: auto;
-			opacity: 1;
-		}
-		//
 		&::after {
 			content: '';
 			display: block;
@@ -114,12 +109,6 @@
 			right: 15px;
 			border: 4px solid transparent;
 			border-top: 4px solid $color_1;
-		}
-		//
-		&:hover {
-			&::after {
-				opacity: 0;
-			}
 		}
 		//
 		@media (min-width: $lg) {
@@ -131,13 +120,18 @@
 		position: relative;
 		z-index: 100;
 		left: -75px;
-		width: 250px;
+		min-width: 225px;
 		height: 0;
 		overflow: hidden;
 		opacity: 0;
 		list-style: none;
 		background: white;
-		transition: 1s;
+		//
+		&-active {
+			padding: 5px 15px;
+			height: auto;
+			opacity: 1;
+		}
 		//
 		@media (min-width: $md) {
 			position: absolute;
@@ -146,6 +140,7 @@
 		//
 		.nav--menuItem {
 			display: block;
+			margin-top: 5px;
 			margin-right: 0;
 		}
 		//

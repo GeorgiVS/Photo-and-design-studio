@@ -9,10 +9,10 @@
 		margin: 25px 0 15px 0;
 		//
 		@media (min-width: $lg) {
-			margin: 40px 0 25px 0;
+			margin: 40px 0 15px 0;
 		}
 		@media (min-width: $xl) {
-			margin: 60px 0 30px 0;
+			margin: 60px 0 15px 0;
 		}
 	}
 	//
@@ -48,6 +48,7 @@
 		//
 		@media (min-width: $lg) {
 			margin-top: 68px;
-			margin-bottom: 100px;	}
+			margin-bottom: 100px;
+		}
 	}
 }
