@@ -1,0 +1,140 @@
+.column {
+	font-family: $font_2;
+	text-align: center;
+	//
+	&--title {
+		margin: 30px 0;
+		//
+		@media #{$lg} {
+			margin: 50px 0 10px 0;
+		}
+		@media #{$xl} {
+			margin: 80px 0 0 0;
+		}
+	}
+	&--colTitle {
+		font-weight: 400;
+		font-size: 1.5rem;
+		padding: 0 25px;
+		//
+		&::before {
+			content: '';
+			display: table;
+			margin: 15px auto;
+			width: 45px;
+			height: 45px;
+			background: $sprite -24px -211px;
+			//
+			@media #{$lg} {
+				margin: 35px auto 20px auto;
+			}
+			@media #{$xl} {
+				width: 93px;
+				height: 93px;
+				margin: 69px auto 40px auto;
+				background-position: 0 -117px;
+			}
+			.column {
+				font-family: $font_2;
+				text-align: center;
+				//
+				&--title {
+					margin-top: 25px;
+					//
+					@media #{$lg} {
+						margin-top: 50px;
+					}
+					@media #{$xl} {
+						margin-top: 80px;
+					}
+				}
+				&--colTitle {
+					font-weight: 400;
+					font-size: 1.5rem;
+					padding: 0 25px;
+					//
+					&::before {
+						content: '';
+						display: table;
+						margin: 15px auto;
+						width: 45px;
+						height: 45px;
+						background: $sprite -24px -211px;
+						//
+						@media #{$lg} {
+							margin: 35px auto 20px auto;
+						}
+						@media #{$xl} {
+							width: 93px;
+							height: 93px;
+							margin: 69px auto 40px auto;
+							background-position: 0 -117px;
+						}
+					}
+					//
+					&-2 {
+						//
+						&::before {
+							background-position: -118px -211px;
+							//
+							@media #{$xl} {
+								width: 93px;
+								height: 93px;
+								background-position: -94px -117px;
+							}
+						}
+					}
+					//
+					&-3 {
+						//
+						&::before {
+							background-position: -212px -211px;
+							//
+							@media #{$xl} {
+								width: 93px;
+								height: 93px;
+								background-position: -188px -117px;
+							}
+						}
+					}
+				}
+				&--text {
+					margin: 10px auto;
+					max-width: 380px;
+					font-weight: 300;
+				}
+			}
+		}
+		//
+		&-2 {
+			//
+			&::before {
+				background-position: -118px -211px;
+				//
+				@media #{$xl} {
+					width: 93px;
+					height: 93px;
+					background-position: -94px -117px;
+				}
+			}
+		}
+		//
+		&-3 {
+			//
+			&::before {
+				background-position: -212px -211px;
+				//
+				@media #{$xl} {
+					width: 93px;
+					height: 93px;
+					background-position: -188px -117px;
+				}
+			}
+		}
+	}
+	&--text {
+		margin: 10px auto;
+		max-width: 380px;
+		font-weight: 300;
+	}
+}

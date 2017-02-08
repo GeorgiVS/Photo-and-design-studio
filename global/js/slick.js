@@ -2910,4 +2910,18 @@ $(document).ready(function () {
 	$('.js-slider').slick({
 		slidesToShow: 1
 	});
+	$('.js-sliderReviews--slider').slick({
+		mobileFirst: true,
+		responsive: [{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2
+			}
+    }, {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3
+			}
+    	}]
+	});
 });

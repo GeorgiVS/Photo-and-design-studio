@@ -1,14 +1,31 @@
-.layoutMain {
-	height: 100%;
-}
-
-.layoutContent {
-	min-height: 100%;
-}
-
-.layoutFluid {
+.layout {
 	position: relative;
 	min-width: 320px;
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 0 15px;
+	//
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	//
+	&-fluid {
+		position: relative;
+		min-width: 320px;
+		max-width: 100%;
+		padding: 0;
+	}
+	//
+	&-main {
+		height: 100%;
+	}
+	//
+	&-content {
+		min-height: 100%;
+	}
 	//
 	&-fixed {
 		//
@@ -22,65 +39,70 @@
 		}
 	}
 	//
-	&-bg-black {
-		background: $color_1;
-	}
-	//
-	&-border-bottom {
-		outline: none;
-		border-bottom: 1px solid $color_5;
-	}
-	//
-	&-section {
+	&-bg {
 		//
-		@media (min-width: $lg) {
-			height: 656px;
+		&-black {
+			background: $color_1;
+		}
+		&-grey {
+			background: $colorGrey;
 		}
 	}
 	//
-	&-footer {
-		margin-top: 50px;
-		padding: 10px 0;
+	&-border {
 		//
-		@media (min-width: $lg) {
-			margin-top: 100px;
-			padding: 25px 0;
-		}
-		@media (min-width: $xl) {
-			margin-top: 150px;
-			padding: 50px 0;
+		&-bottom {
+			border-bottom: 1px solid $color_5;
 		}
 	}
-}
-
-.layout {
-	position: relative;
-	width: 100%;
-	min-width: 320px;
-	max-width: 1560px;
-	margin: 0 auto;
-	padding: 0 15px;
 	//
-	&:before,
-	&:after {
-		content: " ";
-		display: table;
-		clear: both;
+	/* Элементы */
+	//
+	&--banner {
+		background: url(../../blocks/banner/img/banner.jpg);
+		background-size: cover;
 	}
 	//
 	&--breadcrumbs {
 		margin-top: 15px;
 		//
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			margin-top: 25px;
 		}
-		@media (min-width: $xl) {
+		@media #{$xl} {
 			margin-top: 60px;
+		}
+	}
+	&--section {
+		//
+		@media #{$lg} {
+			height: 656px;  
 		}
 	}
 	//
 	&--button {
 		margin: 0 auto;
 		margin-top: 39px;
+	}
+	//
+	&--footer {
+		margin-top: 50px;
+		padding: 10px 0;
+		//
+		@media #{$lg} {
+			margin-top: 100px;
+			padding: 25px 0;
+		}
+		@media #{$xl} {
+			margin-top: 150px;
+			padding: 50px 0;
+		}
+	}
+	&--band {
+		margin-top: 50px;
+		@media #{$xl} {
+			margin-top: 140px;
+			
+		}
 	}
 }

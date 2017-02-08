@@ -7,10 +7,15 @@
 	background: $color_4;
 	cursor: pointer;
 	//
-	@media (min-width: $sm) {
+	@media #{$sm} {
 		padding: 15px 25px;
 	}
-	@media (min-width: $xl) {
+	@media #{$xl} {
 		padding: 25px 55px;
+	}
+	//
+	&:hover {
+		outline: 2px solid $color_4;
+		background: transparent;
 	}
 }

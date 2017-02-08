@@ -24,12 +24,12 @@
 	&--social {
 		z-index: 100;
 		//
-		@media (min-width: $xs) and (max-width: $sm - 1) {
+		@media #{$xs} and (max-width: 767px) {   
 			float: left;
 			width: 30%;
 			padding-top: 30px;
 		}
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			text-align: left;
 			line-height: 41px;
 		}
@@ -37,7 +37,7 @@
 	//
 	&--contacts {
 		//
-		@media (min-width: $xs) and (max-width: $sm - 1) {
+		@media #{$xs} and (max-width: 767px) {
 			float: left;
 			width: 70%;
 		}
@@ -49,7 +49,7 @@
 	//
 	&--menu {
 		//
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			text-align: right;
 			padding: 0;
 			line-height: 41px;
@@ -80,7 +80,7 @@
 	//
 	&--socialLink_3 {
 		@extend .header--socialLink_1;
-		width: 22px;
+		width: 22px; 
 		height: 12px;
 		background-position: -27px 0;
 		//
@@ -102,11 +102,11 @@
 			background: url(../img/sprite.png) no-repeat -49px 0;
 		}
 		//
-		@media (min-width: $xs) {
+		@media #{$xs} {
 			margin-right: 30px;
 			display: inline-block;
 		}
-		@media (min-width: $xl) {
+		@media #{$xl} {
 			margin-right: 66px;
 			//
 			&::after {
@@ -152,7 +152,7 @@
 			content: '';
 		}
 		//
-		@media (min-width: $lg) {
+		@media #{$lg} {
 			margin-right: 0;
 		}
 	}
@@ -160,20 +160,28 @@
 	&--menuItem {
 		display: inline-block;
 		color: $color_2 !important;
-		transition: 0.3s;
 		padding: 0 10px;
 		text-align: center;
 		background: #2c2c2c;
+		border-bottom: 2px solid transparent;
+		//
+		@media #{$lg} {
+			border-bottom: 4px solid transparent;
+		}
 		//
 		&:hover {
-			background: $color_4;
-			color: $color_1 !important;
+			background: black;
+			border-bottom: 2px solid $color_4;
+			//
+			@media #{$lg} {
+				border-bottom: 4px solid $color_4;
+			}
 		}
 		//
 		@media (min-width: 1255px) {
 			height: 41px;
 		}
-		@media (min-width: $xl) {
+		@media #{$xl} {
 			width: 180px;
 		}
 	}
@@ -186,13 +194,13 @@
 	&--logo {
 		text-align: center;
 		//
-		@media (min-width: $sm) {
-			padding: 0 !important;
+		@media #{$sm} {
+			padding: 0;
 			text-align: left;
 		}
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			position: absolute;
-			top: 0;
+			top: 5px;
 		}
 	}
 	//

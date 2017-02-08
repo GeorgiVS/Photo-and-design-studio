@@ -4,14 +4,14 @@ function MobileDetect() {
 }
 jQuery(document).ready(function ($) {
 	if (!MobileDetect()) {
-		$nav = $(".layoutFluid-fixed");
+		$nav = $(".layout-fixed");
 		$window = $(window);
 		$h = $nav.offset().top;
 		$window.scroll(function () {
 			if ($window.scrollTop() > $h) {
-				$nav.addClass("layoutFluid-fixed-active");
+				$nav.addClass("layout-fixed-active");
 			} else {
-				$nav.removeClass("layoutFluid-fixed-active");
+				$nav.removeClass("layout-fixed-active");
 			}
 		});
 	}

@@ -78,7 +78,7 @@ $slick-opacity-not-active: 0.25 !default;
 		-moz-osx-font-smoothing: grayscale;
 	}
 	//
-	@media (min-width: $sm) {
+	@media #{$lg} {
 		height: 56px;
 		width: 56px;
 	}
@@ -94,7 +94,7 @@ $slick-opacity-not-active: 0.25 !default;
 		background-position: -73px -90px;
 	}
 	//
-	@media (min-width: $sm) {
+	@media #{$lg} {
 		top: 80px;
 		right: -90px;
 		background-position: 0 -33px;
@@ -108,13 +108,13 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
 	top: 25px;
 	right: 0;
-	background: url(../img/sprite.png) no-repeat -17px -89px;
+	background: url(../img/sprite.png) no-repeat -17px -90px;
 	//
 	&:hover {
 		background-position: -73px -90px;
 	}
 	//
-	@media (min-width: $sm) {
+	@media #{$lg} {
 		top: 25px;
 		right: -90px;
 		background-position: 0 -33px;
@@ -123,4 +123,14 @@ $slick-opacity-not-active: 0.25 !default;
 			background-position: -57px -33px;
 		}
 	}
+}
+
+.sliderReviews--slider .slick-prev {
+	top: 50%;
+	left: 0;
+}
+
+.sliderReviews--slider .slick-next {
+	top: 54%;
+	right: 0;
 }

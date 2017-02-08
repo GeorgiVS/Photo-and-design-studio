@@ -1,0 +1,43 @@
+.band {
+	text-align: center;
+	font-family: $font_2;
+	padding: 25px 0 50px 0px;
+	//
+	@media #{$sm} {
+		text-align: left;
+	}
+	@media #{$xl} {
+		padding: 70px 0 138px 0px;
+	}
+	//
+	&--col {}
+	//
+	&--img {
+		margin-top: 30px;
+		max-width: 100%;
+		height: auto;
+		//
+		@media #{$xl} {
+			margin-top: 60px;
+		}
+	}
+	//
+	&--name {
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-top: 10px;
+		//
+		@media #{$xl} {
+			font-size: 1.5rem;
+			margin-top: 30px;
+		}
+	}
+	//
+	&--profession {
+		font-weight: 300;
+		//
+		@media #{$xl} {
+			margin-top: 10px;
+		}
+	}
+}

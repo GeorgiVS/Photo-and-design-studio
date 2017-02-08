@@ -1,0 +1,27 @@
+.sliderReviews {
+	padding-top: 130px;
+	text-align: center;
+	//
+	&--img {
+		display: inline-block !important;
+		margin-top: 50px;
+	}
+	//
+	&--name {
+		margin-top: 28px;
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+	//
+	&--profession {
+		font-family: $font_3;
+		font-size: 0.7rem;
+		color: #606372;
+		
+	}
+	//
+	&--review {
+	margin: 15px auto;
+		max-width: 380px;
+	}
+}

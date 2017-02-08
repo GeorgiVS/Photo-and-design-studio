@@ -7,7 +7,7 @@
 	&--col_2 {
 		padding: 0;
 		//
-		@media (min-width: $xs) and (max-width: $sm - 1) {
+		@media #{$xs} and (max-width: 768px) {
 			float: left;
 			width: 50%;
 		}
@@ -16,7 +16,7 @@
 	&--col_3 {
 		padding: 0;
 		//
-		@media (min-width: $xs) and (max-width: $sm - 1) {
+		@media #{$xs} and (max-width: 768px) {
 			padding-top: 10px;
 			clear: both;
 		}
@@ -26,7 +26,7 @@
 		display: table;
 		margin: 10px auto;
 		//
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			display: block;
 			margin: 10px 0 0 0;
 		}
@@ -45,7 +45,7 @@
 	&--menuWrapper {
 		margin-top: 15px;
 		//
-		@media (min-width: $lg) {
+		@media #{$lg} {
 			width: 420px;
 			margin-left: 100px;
 		}
@@ -55,7 +55,7 @@
 	&--Rtop,
 	&--metrika {
 		//
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			margin-top: 30px;
 			text-align: right;
 		}
@@ -63,7 +63,7 @@
 	//
 	&--metrika {
 		//
-		@media (min-width: $sm) {
+		@media #{$sm} {
 			float: right;
 		}
 	}
@@ -117,7 +117,7 @@
 		padding: 0;
 		list-style: none;
 		//
-		@media (min-width: $lg) {
+		@media #{$lg} {
 			-moz-column-gap: 125px;
 			column-gap: 125px;
 		}
