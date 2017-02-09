@@ -1,0 +1,32 @@
+.collectionLogo {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	//
+	@media #{$xl} {
+		padding-bottom: 105px;
+	}
+	&--title {
+		margin: 50px 0 25px 0;
+		//
+		@media #{$sm} {
+			margin: 50px 0 60px 0;
+		}
+		@media #{$xl} {
+			margin: 100px 0 90px 0;
+		}
+	}
+	&--col {
+		height: 125px;
+	}
+	//
+	&--link {
+		display: table;
+		margin: 0 auto;
+		transition: 0.5s;
+	}
+	&--img {
+		max-width: 100%;
+		height: auto;
+	}
+}

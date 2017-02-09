@@ -87,20 +87,20 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev {
 	top: 50px;
 	right: 0;
-	background: url(../img/sprite.png) no-repeat -17px -89px;
+	background: url(../img/sprite.png) no-repeat 0 -88px;
 	transform: rotate(180deg);
 	//
 	&:hover {
-		background-position: -73px -90px;
+		background-position: -25px -88px;
 	}
 	//
 	@media #{$lg} {
 		top: 80px;
 		right: -90px;
-		background-position: 0 -33px;
+		background-position: 0 -32px;
 		//
 		&:hover {
-			background-position: -57px -33px;
+			background-position: -56px -32px;
 		}
 	}
 }
@@ -108,29 +108,29 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
 	top: 25px;
 	right: 0;
-	background: url(../img/sprite.png) no-repeat -17px -90px;
+	background: url(../img/sprite.png) no-repeat 0 -88px;
 	//
 	&:hover {
-		background-position: -73px -90px;
+		background-position: -25px -88px;
 	}
 	//
 	@media #{$lg} {
 		top: 25px;
 		right: -90px;
-		background-position: 0 -33px;
+		background-position: 0 -31px;
 		//
 		&:hover {
-			background-position: -57px -33px;
+			background-position: -56px -32px;
 		}
 	}
 }
 
 .sliderReviews--slider .slick-prev {
-	top: 50%;
+	top: 41%;
 	left: 0;
 }
 
 .sliderReviews--slider .slick-next {
-	top: 54%;
+	top: 48%;
 	right: 0;
 }

@@ -75,7 +75,7 @@
 			width: 11px;
 			height: 11px;
 			margin-right: 10px;
-			background: url(../img/sprite.png) no-repeat -88px 0;
+			background: url(../img/sprite.png) no-repeat -82px 0;
 		}
 		//
 		div {
@@ -91,7 +91,7 @@
 			width: 8px;
 			height: 12px;
 			margin-right: 10px;
-			background: url(../img/sprite.png) no-repeat -101px 0;
+			background: url(../img/sprite.png) no-repeat -94px 0;
 		}
 		//
 		div {
@@ -107,7 +107,7 @@
 			width: 13px;
 			height: 11px;
 			margin-right: 10px;
-			background: url(../img/sprite.png) no-repeat -110px 0;
+			background: url(../img/sprite.png) no-repeat -102px 0;
 		}
 	}
 	//
@@ -133,5 +133,10 @@
 	//
 	&--menuLink {
 		color: white !important;
+		transition: .3s;
+		//
+		&:hover {
+			color: $color_4 !important;
+		}
 	}
 }

@@ -64,17 +64,17 @@
 		background: url(../img/sprite.png) no-repeat;
 		//
 		&:hover {
-			background-position: 0 -17px;
+			background-position: 0 -16px;
 		}
 	}
 	//
 	&--socialLink_2 {
 		@extend .header--socialLink_1;
 		width: 8px;
-		background-position: -17px 0;
+		background-position: -16px 0;
 		//
 		&:hover {
-			background-position: -17px -17px;
+			background-position: -16px -16px;
 		}
 	}
 	//
@@ -82,10 +82,10 @@
 		@extend .header--socialLink_1;
 		width: 22px; 
 		height: 12px;
-		background-position: -27px 0;
+		background-position: -24px 0;
 		//
 		&:hover {
-			background-position: -27px -17px;
+			background-position: -24px -16px;
 		}
 	}
 	//
@@ -99,7 +99,7 @@
 			display: inline-block;
 			width: 10px;
 			height: 16px;
-			background: url(../img/sprite.png) no-repeat -49px 0;
+			background: url(../img/sprite.png) no-repeat -46px 0;
 		}
 		//
 		@media #{$xs} {
@@ -130,7 +130,7 @@
 			display: inline-block;
 			width: 15px;
 			height: 9px;
-			background: url(../img/sprite.png) no-repeat -60px 0;
+			background: url(../img/sprite.png) no-repeat -56px 0;
 		}
 	}
 	//
@@ -145,7 +145,7 @@
 			display: inline-block;
 			width: 12px;
 			height: 12px;
-			background: url(../img/sprite.png) no-repeat -75px 0;
+			background: url(../img/sprite.png) no-repeat -71px 0;
 		}
 		//
 		&::after {

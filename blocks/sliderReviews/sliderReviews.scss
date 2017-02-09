@@ -1,10 +1,14 @@
 .sliderReviews {
-	padding-top: 130px;
 	text-align: center;
+	padding-top: 20px;
+	//
+	@media #{$xl} {
+		padding-top: 88px;
+	}
 	//
 	&--img {
 		display: inline-block !important;
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 	//
 	&--name {
@@ -17,11 +21,10 @@
 		font-family: $font_3;
 		font-size: 0.7rem;
 		color: #606372;
-		
 	}
 	//
 	&--review {
-	margin: 15px auto;
+		margin: 15px auto;
 		max-width: 380px;
 	}
 }
