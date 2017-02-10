@@ -1,5 +1,5 @@
 .slide {
-	//
+	// 
 	&-portfolio {
 		margin-bottom: 50px;
 		//
@@ -26,6 +26,21 @@
 			}
 		}
 	}
+	// 
+	&-interiorDesign {
+		//
+		.slide--title {
+			text-align: center;
+			//
+			@media #{$xl} {
+				margin-top: 110px;
+			}
+		}
+		//
+		.slide--text {
+			display: none !important;
+		}
+	}
 	//
 	&--title {
 		text-align: left;
@@ -34,10 +49,6 @@
 		@media #{$xl} {
 			margin-bottom: 69px;
 		}
-	}
-	//
-	&--col {
-		left: -15px;
 	}
 	//
 	&--item {

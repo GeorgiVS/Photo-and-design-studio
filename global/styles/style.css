@@ -1593,8 +1593,15 @@ a {
 }
 
 .layout--banner {
-  background: url(../../blocks/banner/img/banner.jpg);
   background-size: cover;
+}
+
+.layout--banner-aboutUs {
+  background: url(../../blocks/banner/img/aboutUs.jpg);
+}
+
+.layout--banner-interiorDesign {
+  background: url(../../blocks/banner/img/interiorDesign.jpg);
 }
 
 .layout--breadcrumbs {
@@ -1675,6 +1682,19 @@ a {
 
 .layout--pagination {
   margin: 50px auto 80px auto;
+}
+
+@media (min-width: 1500px) {
+  .layout--interiorDesign {
+    position: relative;
+    z-index: -1;
+    margin-top: -222px;
+    padding-top: 300px;
+  }
+}
+
+.layout--interiorDesign .button {
+  margin-top: 80px;
 }
 
 .header {
@@ -2653,6 +2673,20 @@ a {
   }
 }
 
+.slide-interiorDesign .slide--title {
+  text-align: center;
+}
+
+@media (min-width: 1500px) {
+  .slide-interiorDesign .slide--title {
+    margin-top: 110px;
+  }
+}
+
+.slide-interiorDesign .slide--text {
+  display: none !important;
+}
+
 .slide--title {
   text-align: left;
   margin-bottom: 30px;
@@ -2662,10 +2696,6 @@ a {
   .slide--title {
     margin-bottom: 69px;
   }
-}
-
-.slide--col {
-  left: -15px;
 }
 
 .slide--item {

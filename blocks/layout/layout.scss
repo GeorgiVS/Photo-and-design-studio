@@ -62,8 +62,15 @@
 	/* Элементы */
 	//
 	&--banner {
-		background: url(../../blocks/banner/img/banner.jpg);
 		background-size: cover;
+		//
+		&-aboutUs {
+			background: url(../../blocks/banner/img/aboutUs.jpg);
+		}
+		//
+		&-interiorDesign {
+			background: url(../../blocks/banner/img/interiorDesign.jpg);
+		}
 	}
 	//
 	&--breadcrumbs {
@@ -120,5 +127,17 @@
 	}
 	&--pagination {
 		margin: 50px auto 80px auto;
+	}
+	&--interiorDesign {
+		//
+		@media #{$xl} {
+			position: relative;
+			z-index: -1;
+			margin-top: -222px;
+			padding-top: 300px;
+		}
+		.button {
+			margin-top: 80px;
+		}
 	}
 }
