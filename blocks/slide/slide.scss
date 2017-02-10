@@ -1,9 +1,35 @@
 .slide {
 	//
+	&-portfolio {
+		margin-bottom: 50px;
+		//
+		@media #{$xl} {
+			margin-bottom: 100px;
+		}
+		//
+		.slide--text {
+			display: none;
+		}
+		//
+		.slide--item-5,
+		.slide--item-6 {
+			display: block;
+		}
+		//
+		.slide--itemTitle {
+			max-width: 60%;
+			bottom: 3%;
+			//
+			@media #{$xl} {
+				line-height: 2.0rem;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	//
 	&--title {
 		text-align: left;
 		margin-bottom: 30px;
-		//
 		//
 		@media #{$xl} {
 			margin-bottom: 69px;
@@ -11,11 +37,12 @@
 	}
 	//
 	&--col {
-		
 		left: -15px;
 	}
 	//
 	&--item {
+		display: table;
+		margin: 0 auto;
 		margin-bottom: 15px;
 		color: white;
 		position: relative;
@@ -55,6 +82,11 @@
 					background-position: -168px -32px;
 				}
 			}
+		}
+		//
+		&-5,
+		&-6 {
+			display: none;
 		}
 	}
 	//

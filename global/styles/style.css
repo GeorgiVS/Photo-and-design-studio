@@ -2622,6 +2622,37 @@ a {
   height: auto;
 }
 
+.slide-portfolio {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1500px) {
+  .slide-portfolio {
+    margin-bottom: 100px;
+  }
+}
+
+.slide-portfolio .slide--text {
+  display: none;
+}
+
+.slide-portfolio .slide--item-5,
+.slide-portfolio .slide--item-6 {
+  display: block;
+}
+
+.slide-portfolio .slide--itemTitle {
+  max-width: 60%;
+  bottom: 3%;
+}
+
+@media (min-width: 1500px) {
+  .slide-portfolio .slide--itemTitle {
+    line-height: 2.0rem;
+    font-size: 1.5rem;
+  }
+}
+
 .slide--title {
   text-align: left;
   margin-bottom: 30px;
@@ -2638,6 +2669,8 @@ a {
 }
 
 .slide--item {
+  display: table;
+  margin: 0 auto;
   margin-bottom: 15px;
   color: white;
   position: relative;
@@ -2683,6 +2716,10 @@ a {
   .slide--item-another .slide--link {
     background-position: -168px -32px;
   }
+}
+
+.slide--item-5, .slide--item-6 {
+  display: none;
 }
 
 .slide--img {

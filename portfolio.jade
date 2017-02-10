@@ -1,3 +1,20 @@
+//- Variables
+- var title = 'Портфолио';
+- var needClass = 'div class="main slide row slide-portfolio"';
+- var slideItemAnother = 'div class="slide--item"';
+- var slideCol = 'div class="slide--col col-sm-4"';
+- var slideImg_1 = 'blocks/slide/img/portfolio_1.jpg';
+- var slideImg_2 = 'blocks/slide/img/portfolio_2.jpg';
+- var slideImg_3 = 'blocks/slide/img/portfolio_3.jpg';
+- var slideImg_4 = 'blocks/slide/img/portfolio_4.jpg';
+- var slideImg_5 = 'blocks/slide/img/portfolio_5.jpg';
+- var slideImg_6 = 'blocks/slide/img/portfolio_6.jpg';
+- var slideItemTitle_1 = 'Beauty-съемка: истинное совершенство и красота в деталях';
+- var slideItemTitle_2 = 'Проффесиональная видеосъмка в Нижнем Новгороде от «100% арт»';
+- var slideItemTitle_3 = 'Глубина личности на плоском фото — это портретная съемка от «100% арт»';
+- var slideItemTitle_4 = 'Предметная съемка — вдохнем жизнь в любой предмет';
+- var slideItemTitle_5 = 'Уличная фотосъемка от «100% арт»';
+- var slideItemTitle_6 = 'Свадебная фотосъемка от «100% арт»';
 doctype html
 html(lang="ru")
 	head
@@ -5,15 +22,15 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="shortcut icon" href="global/img/favicon.ico")
-		title Photo and design studio
+		title=title
 		link(rel="stylesheet", href="global/styles/style.css")
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	body
-		.layoutFluid.layoutMain
-			.layoutContent
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
 		
 				//Begin header
 				include blocks/header/header.jade
@@ -25,27 +42,14 @@ html(lang="ru")
 					include blocks/breadcrumbs/breadcrumbs.jade
 					//End breadcrumbs
 			
-					//Begin main
-					include blocks/main/main.jade
-					//End main
-				
-				//Begin section
-				include blocks/section/section.jade
-				//End section
-				
-				//Begin button
-				include blocks/button/button.jade
-				//End button
+					//Begin slide
+					include blocks/slide/slide.jade
+					//End slide
 				
 			//Begin footer
 			include blocks/footer/footer.jade
 			//End footer
 			
-		//Scripts
-		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-		script(src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
-		script(src="global/js/scripts.js")
-//-		script(src="blocks/header/header.js")
-//-		script(src="blocks/nav/nav.js")
-//-		script(src="blocks/slider/slick.js")
-//-		script(src="global/js/wow.js")
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts

@@ -1,5 +1,6 @@
-main.slide.row
+#{needClass}
 	h2.slide--title=title
+	
 	#{slideCol}
 		.slide--item
 			img.slide--img(src="#{slideImg_1}", alt="Тематическая картинка")
@@ -7,7 +8,7 @@ main.slide.row
 			.slide--date=slideDate_1
 			a.slide--link(href="#")
 	#{slideCol}
-		.slide--item.slide--item-another
+		#{slideItemAnother}
 			img.slide--img(src="#{slideImg_2}", alt="Тематическая картинка")
 			.slide--itemTitle=slideItemTitle_2
 			.slide--date=slideDate_2
@@ -33,3 +34,15 @@ main.slide.row
 			.slide--itemTitle=slideItemTitle_4
 			.slide--date=slideDate_4
 			a.slide--link(href="#")
+	#{slideCol}
+		.slide--item.slide--item-5
+			img.slide--img(src="#{slideImg_5}", alt="Тематическая картинка")
+			.slide--itemTitle=slideItemTitle_5
+			a.slide--link(href="#")
+	#{slideCol}
+		.slide--item.slide--item-6
+			img.slide--img(src="#{slideImg_6}", alt="Тематическая картинка")
+			.slide--itemTitle=slideItemTitle_6
+			a.slide--link(href="#")
+
+
