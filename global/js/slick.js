@@ -2910,6 +2910,32 @@ $(document).ready(function () {
 	$('.js-slider').slick({
 		slidesToShow: 1
 	});
+
+	$('.js-sliderPreview--slider').slick({
+		slidesToShow: 1,
+		fade: true,
+		asNavFor: '.js-sliderPreview--nav'
+	});
+
+	$('.js-sliderPreview--nav').slick({
+		slidesToShow: 2,
+		asNavFor: '.js-sliderPreview--slider',
+		focusOnSelect: true,
+		arrows: false,
+		mobileFirst: true,
+		responsive: [{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3
+			}
+    }, {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4
+			}
+    	}]
+	});
+
 	$('.js-sliderReviews--slider').slick({
 		mobileFirst: true,
 		responsive: [{

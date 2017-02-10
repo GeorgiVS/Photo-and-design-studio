@@ -2,6 +2,75 @@
 	font-family: $font_2;
 	text-align: center;
 	//
+	&-rent {
+		//
+		.column--colTitle {
+			max-width: 300px;
+			font-size: 0.8rem;
+			line-height: 1.0rem;
+			height: 150px;
+			//
+			@media #{$xs} {
+				font-size: 1.0rem;
+				line-height: 1.2rem;
+			}
+			@media #{$sm} {
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+			}
+			@media #{$xl} {
+				font-size: 1.5rem;
+				margin-bottom: 60px;
+			
+			}
+			//
+			&::before {
+				background-position: -135px -206px;
+				//
+				@media #{$lg} {
+					background-position: -279px -113px;
+				}
+			}
+		}
+		//
+		.column--colTitle-2 {
+			//
+			&::before {
+				background-position: -180px -206px;
+				//
+				@media #{$lg} {
+					background-position: -372px -113px;
+				}
+			}
+		}
+		//
+		.column--colTitle-3 {
+			//
+			&::before {
+				background-position: -225px -206px;
+				//
+				@media #{$lg} {
+					background-position: -465px -113px;
+				}
+			}
+		}
+		//
+		.column--colTitle-4 {
+			//
+			&::before {
+				background-position: -270px -206px;
+				//
+				@media #{$lg} {
+					background-position: -558px -113px;
+				}
+			}
+		}
+		//
+		.column--text {
+			display: none;
+		}
+	}
+	//
 	&--title {
 		margin-top: 25px;
 		//
@@ -27,8 +96,6 @@
 			//
 			@media #{$lg} {
 				margin: 35px auto 20px auto;
-			}
-			@media #{$xl} {
 				width: 93px;
 				height: 93px;
 				margin: 69px auto 40px auto;
@@ -41,7 +108,7 @@
 			&::before {
 				background-position: -45px -206px;
 				//
-				@media #{$xl} {
+				@media #{$lg} {
 					width: 93px;
 					height: 93px;
 					background-position: -93px -113px;
@@ -54,7 +121,7 @@
 			&::before {
 				background-position: -90px -206px;
 				//
-				@media #{$xl} {
+				@media #{$lg} {
 					width: 93px;
 					height: 93px;
 					background-position: -93px -113px;

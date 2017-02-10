@@ -59,6 +59,19 @@
 		}
 	}
 	//
+	&-interiorDesign {
+		//
+		@media #{$xl} {
+			position: relative;
+			z-index: -1;
+			margin-top: -222px;
+			padding-top: 300px;
+		}
+		.button {
+			margin-top: 80px;
+		}
+	}
+	//
 	/* Элементы */
 	//
 	&--banner {
@@ -83,6 +96,7 @@
 			margin-top: 60px;
 		}
 	}
+	//
 	&--section {
 		//
 		@media #{$lg} {
@@ -113,31 +127,32 @@
 			padding: 50px 0;
 		}
 	}
+	//
 	&--band {
 		margin-top: 50px;
+		//
 		@media #{$xl} {
 			margin-top: 140px;
 		}
 	}
+	//
 	&--collectionLogo {
 		margin-top: 50px;
+		//
 		@media #{$xl} {
 			margin-top: 150px;
 		}
 	}
+	//
 	&--pagination {
 		margin: 50px auto 80px auto;
 	}
-	&--interiorDesign {
+	//
+	&--sliderPreview {
+		margin: 50px auto 0 auto;
 		//
 		@media #{$xl} {
-			position: relative;
-			z-index: -1;
-			margin-top: -222px;
-			padding-top: 300px;
-		}
-		.button {
-			margin-top: 80px;
+			margin: 100px auto 0 auto;
 		}
 	}
 }

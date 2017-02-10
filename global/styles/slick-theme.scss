@@ -40,7 +40,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
 	.slick-loading & {
-		background: #fff slick-image-url("../../blocks/slider/img/ajax-loader.gif") center center no-repeat;
+		background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
 	}
 }
 
@@ -117,7 +117,7 @@ $slick-opacity-not-active: 0.25 !default;
 	@media #{$lg} {
 		top: 25px;
 		right: -90px;
-		background-position: 0 -31px;
+		background-position: 0 -32px;
 		//
 		&:hover {
 			background-position: -56px -32px;
@@ -133,4 +133,24 @@ $slick-opacity-not-active: 0.25 !default;
 .sliderReviews--slider .slick-next {
 	top: 48%;
 	right: 0;
+}
+
+.sliderPreview--slider .slick-prev {
+	top: 52%;
+	left: 2%;
+	opacity: 0.4;
+	//
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.sliderPreview--slider .slick-next {
+	top: 55%;
+	right: 2%;
+	opacity: 0.4;
+	//
+	&:hover {
+		opacity: 1;
+	}
 }
