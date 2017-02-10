@@ -28,13 +28,15 @@ h5 {
 h2 {
 	margin: 20px 0 10px 0;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2.0rem;
 	//
 	@media #{$lg} {
 		margin: 30px 0 20px 0;
+		font-size: 2.3rem;
 	}
 	@media #{$xl} {
 		margin: 55px 0 20px 0;
+		font-size: 2.5rem;
 	}
 }
 
