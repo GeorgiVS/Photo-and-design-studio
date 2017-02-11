@@ -1,14 +1,11 @@
 .header {
 	font-size: 0.8rem;
 	color: $color_2;
+	text-align: center;
 	//
-	&--row_1 {
-		text-align: center;
-		//
-		@media (min-width: 1216px) {
-			height: 41px;
-			overflow: hidden;
-		}
+	@media (min-width: 1216px) {
+		height: 41px;
+		overflow: hidden;
 	}
 	//
 	&--social,
@@ -24,7 +21,7 @@
 	&--social {
 		z-index: 100;
 		//
-		@media #{$xs} and (max-width: 767px) {   
+		@media #{$xs} and (max-width: 767px) {
 			float: left;
 			width: 30%;
 			padding-top: 30px;
@@ -80,7 +77,7 @@
 	//
 	&--socialLink_3 {
 		@extend .header--socialLink_1;
-		width: 22px; 
+		width: 22px;
 		height: 12px;
 		background-position: -24px 0;
 		//
@@ -184,36 +181,5 @@
 		@media #{$xl} {
 			width: 180px;
 		}
-	}
-	//
-	&--row_2 {
-		position: relative;
-		padding: 13px 0 23px 0;
-	}
-	//
-	&--logo {
-		text-align: center;
-		//
-		@media #{$sm} {
-			padding: 0;
-			text-align: left;
-		}
-		@media #{$sm} {
-			position: absolute;
-			top: 5px;
-		}
-	}
-	//
-	&--logoImg {
-		margin-left: -5px;
-		margin-right: 10px;
-	}
-	//
-	&--logoTitle {
-		position: relative;
-		top: 5px;
-		display: inline-block;
-		font-size: 14px;
-		color: #3d3d3d;
 	}
 }

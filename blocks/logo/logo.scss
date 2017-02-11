@@ -1,0 +1,22 @@
+.logo {
+	position: relative;
+	padding-top: 5px;
+	text-align: center;
+	//
+	@media #{$sm} {
+		position: absolute;
+	}
+	//
+	&--logoImg {
+		margin-left: -5px;
+		margin-right: 10px;
+	}
+	//
+	&--logoTitle {
+		position: relative;
+		top: 5px;
+		display: inline-block;
+		font-size: 14px;
+		color: #3d3d3d;
+	}
+}

@@ -1,5 +1,9 @@
 .nav {
 	//
+	@media #{$sm} {
+		height: 68px;
+	}
+	//
 	&--serviceTitle {
 		display: none;
 	}
@@ -22,6 +26,14 @@
 		cursor: pointer;
 		transition: 0.3s;
 		//
+		@media #{$sm} {
+			float: right;
+			margin: 25px auto 0 auto;
+		}
+		@media #{$md} {
+			display: none;
+		}
+		//
 		&::after {
 			content: '';
 			display: block;
@@ -39,13 +51,6 @@
 				background: $color_4;
 			}
 		}
-		//
-		@media #{$sm} {
-			float: right;
-		}
-		@media #{$md} {
-			display: none;
-		}
 	}
 	//
 	&--menu {
@@ -62,7 +67,7 @@
 		@media #{$md} {
 			display: block;
 			float: right;
-			margin: 0;
+			margin-top: 15px;
 			left: 0;
 		}
 	}

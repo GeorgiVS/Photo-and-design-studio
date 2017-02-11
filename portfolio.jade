@@ -1,9 +1,9 @@
 //- Variables
 - var title = 'Портфолио';
 - var slideTitle = 'Портфолио';
-- var slide = 'div class="main slide row slide-portfolio"';
-- var slideItemAnother = 'div class="slide--item"';
-- var slideCol = 'div class="slide--col col-sm-4"';
+- var slide = 'slide row slide-portfolio';
+- var slideItemAnother = 'slide--item';
+- var slideCol = 'slide--col col-sm-4';
 - var slideImg_1 = 'blocks/slide/img/portfolio_1.jpg';
 - var slideImg_2 = 'blocks/slide/img/portfolio_2.jpg';
 - var slideImg_3 = 'blocks/slide/img/portfolio_3.jpg';
@@ -32,10 +32,23 @@ html(lang="ru")
 	body
 		.layout.layout-fluid.layout-main
 			.layout.layout-fluid.layout-content
-		
-				//Begin header
-				include blocks/header/header.jade
-				//End header
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
 			
 				.layout
 			
@@ -47,10 +60,13 @@ html(lang="ru")
 					include blocks/slide/slide.jade
 					//End slide
 				
-			//Begin footer
-			include blocks/footer/footer.jade
-			//End footer
+			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
+				.layout
 			
+					//Begin footer
+					include blocks/footer/footer.jade
+					//End footer
+
 		//Begin scripts
 		include blocks/scripts/scripts.jade
 		//End scripts
