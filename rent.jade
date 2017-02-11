@@ -1,0 +1,82 @@
+//- Variables
+- var title = 'Аренда фотостудии';
+- var layoutForBanner = 'layout layout-fluid layout--banner-aboutUs';
+- var bannerText = 'Жить на 100%! Создавать прекрасное. Вдохновлять. Все это и многое другое мы — фотостудия 100% ART. В нашем портфолио большой опыт работы с крупнейшими компаниями и печатными СМИ, а также сотрудничество с известными мировыми брендами. Мы проводим рекламные и персональные съемки, смело беремся за сложные задачи и создаем невероятные проекты. Вы привыкли работать только с профессионалами, выбирать лучшее и не боитесь смелых импровизаций? Тогда мы нашли друг друга. Мы не ищем примитивных путей. Мы привыкли впечатлять наших клиентов. Мы уверены, что сможем впечатлить и Вас!'
+- var bannerLink = 'Подробнее';
+- var columnTitle = 'column--title';
+- var columnTitleValue = 'Преимущества';
+- var column = 'column row column-rent layout--column'
+- var columnCol = 'column--col col-xs-6 col-md-3';
+- var columncolTitle = 'Удобная раздевалка с отпаривателем';
+- var columncolTitle_2 = 'Бесплатный чай, кофе, WI FI';
+- var columncolTitle_3 = 'Удобная зона ожидания';
+- var columncolTitle_4 = 'Бесплатный час для подготовки к съемке';
+- var button = 'Заказать услуги';
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="global/img/favicon.ico")
+		title=title
+		link(rel="stylesheet", href="global/styles/style.css")
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	body
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
+			
+				div(class="#{layoutForBanner}")
+					.layout
+			
+						//Begin banner
+						include blocks/banner/banner.jade
+						//End banner
+				
+				.layout
+					
+					//Begin column
+					include blocks/column/column.jade
+					//End column
+				
+					//Begin sliderPreview
+					include blocks/sliderPreview/sliderPreview.jade
+					//End sliderPreview
+				
+				.layout.layout-fluid.layout-bg-grey_2.layout--price
+					.layout
+									
+						//Begin price
+						include blocks/price/price.jade
+						//End price
+			
+			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
+				.layout
+			
+					//Begin footer
+					include blocks/footer/footer.jade
+					//End footer
+
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts

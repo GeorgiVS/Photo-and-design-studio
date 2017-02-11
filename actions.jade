@@ -1,0 +1,78 @@
+//- Variables
+- var title = 'Акции';
+- var slideTitle = 'Акции';
+- var slide = 'slide';  
+- var slideItemAnother = 'slide--item slide--item-another';
+- var slideCol = 'slide--col col-sm-6';
+- var slideImg_1 = 'blocks/slide/img/actions_1.jpg';
+- var slideImg_2 = 'blocks/slide/img/actions_2.jpg';
+- var slideImg_3 = 'blocks/slide/img/actions_3.jpg';
+- var slideImg_4 = 'blocks/slide/img/actions_4.jpg';
+- var slideImg_5 = 'blocks/slide/img/actions_4.jpg';
+- var slideImg_6 = 'blocks/slide/img/actions_4.jpg';
+- var slideItemTitle_1 = 'Подарочный сертификат на фотосессию';
+- var slideItemTitle_2 = 'Перед показом';
+- var slideItemTitle_3 = 'Новый проект «InBeauty»!';
+- var slideItemTitle_4 = 'Проект «Bikini»';
+- var slideDate_1 = '18.11.2016';
+- var slideDate_2 = '02.04.2015';
+- var slideDate_3 = '18.11.2016';
+- var slideDate_4 = 'Прошедшая акция';
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="global/img/favicon.ico")
+		title=title
+		link(rel="stylesheet", href="global/styles/style.css")
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	body
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
+			
+				.layout
+			
+					//Begin breadcrumbs
+					include blocks/breadcrumbs/breadcrumbs.jade
+					//End breadcrumbs
+			
+					//Begin slide
+					include blocks/slide/slide.jade
+					//End slide
+					
+					//Begin pagination
+					include blocks/pagination/pagination.jade
+					//End pagination
+				
+			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
+				.layout
+			
+					//Begin footer
+					include blocks/footer/footer.jade
+					//End footer
+
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts

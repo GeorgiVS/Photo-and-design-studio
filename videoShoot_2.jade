@@ -1,0 +1,105 @@
+//- Variables
+- var title = 'Видеосъемка';
+
+//-Banner
+- var layoutForBanner = 'layout layout-fluid layout--banner-videoShoot';
+- var bannerTitle = 'Профессиональная видеосъёмка в Нижнем Новгороде от «100% ART»';
+- var bannerText = 'Видеосъёмка — это искусство. Придумать сюжет, запечатлеть его развитие, смонтировать и добавить музыкальное оформление — для того, чтобы сделать всё это грамотно, необходимы знания и опыт. Профессиональная видеосъёмка под руководством видеооператора в Нижнем Новгороде проводится недорого в студии «100% ART».'
+
+//-Slide
+- var slide = 'slide row slide-interiorDesign';
+- var slideItemAnother = 'slide--item';
+- var slideCol = 'slide--col col-sm-6';
+- var slideImg_1 = 'blocks/slide/img/interiorDesign_1.jpg';
+- var slideImg_2 = 'blocks/slide/img/interiorDesign_2.jpg';
+- var slideImg_3 = 'blocks/slide/img/interiorDesign_3.jpg';
+- var slideImg_4 = 'blocks/slide/img/interiorDesign_4.jpg';
+- var slideImg_5 = 'blocks/slide/img/interiorDesign_4.jpg';
+- var slideImg_6 = 'blocks/slide/img/interiorDesign_4.jpg';
+- var slideItemTitle_1 = 'Квартира 1';
+- var slideItemTitle_2 = 'Квартира 2';
+- var slideItemTitle_3 = 'Квартира 3';
+- var slideItemTitle_4 = 'Квартира 4';
+
+//-Column
+- var columnTitle = 'h2 class="column--title"';
+- var columnTitleValue = 'Почему мы';
+- var column = 'column row layout--column'
+- var columnCol = 'column--col col-sm-4';
+- var columncolTitle = 'Мы воплощаем идеи любой сложности';
+- var columncolTitle_2 = 'Приемлемая цена';
+- var columncolTitle_3 = 'Виды съемки';
+- var bannerLink = 'Смотреть работы';
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="global/img/favicon.ico")
+		title=title
+		link(rel="stylesheet", href="global/styles/style.css")
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	body
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
+						
+				div(class="#{layoutForBanner}")
+					.layout
+			
+						//Begin banner
+						include blocks/banner/banner.jade
+						//End banner
+				
+				.layout
+					
+					//Begin menu
+					include blocks/menu/menu.jade
+					//End menu
+					
+					//Begin slide
+					include blocks/slide/slide.jade
+					//End slide
+						
+				.layout.layout-fluid.layout-bg-grey.layout--interiorDesign
+					.layout
+				
+						//Begin column
+						include blocks/column/column.jade
+						//End column
+
+						//Begin button
+						include blocks/button/button.jade
+						//End button
+			
+			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
+				.layout
+			
+					//Begin footer
+					include blocks/footer/footer.jade
+					//End footer
+
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts

@@ -1,0 +1,66 @@
+//- Variables
+- var title = 'Персональная съемка';
+- var button = 'Рассчитать стоимость услуги';
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="global/img/favicon.ico")
+		title=title
+		link(rel="stylesheet", href="global/styles/style.css")
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	body
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
+			
+				.layout
+				
+					//Begin breadcrumbs
+					include blocks/breadcrumbs/breadcrumbs.jade
+					//End breadcrumbs
+				
+					article.text
+						h2 Персональная съемка
+						p 
+							Дизайн интерьера загородного дома в Нижнем Новгороде. Дизайн выполнен в стиле Прованс. Интерьер пропитан провинциальным духом Франции, но в то же время оснащён ноу-хау из области бытовой техники. Стиль для ценителей «старомодных» вещей и антиквариата.
+							
+					//Begin gallery
+					include blocks/gallery/gallery.jade
+					//End gallery
+
+					//Begin button
+					include blocks/button/button.jade
+					//End button
+					
+			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
+				.layout
+			
+					//Begin footer
+					include blocks/footer/footer.jade
+					//End footer
+
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts
