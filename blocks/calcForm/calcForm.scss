@@ -1,0 +1,151 @@
+.calcForm {
+	//
+	&--title {
+		text-align: left;
+		margin-bottom: 15px;
+		//
+		@media #{$lg} {
+			margin-bottom: 35px;
+		}
+	}
+	//
+	&--row {
+		background: $colorGrey;
+	}
+	//
+	&--form {
+		display: table;
+		margin: 0 auto;
+		color: #7d7d7d;
+		//
+		@media #{$lg} {
+			display: block;
+		}
+		@media #{$xl} {
+			padding-left: 65px;
+		}
+	}
+	//
+	&--inputTitle {
+		color: black;
+		margin-top: 15px;
+		//
+		@media #{$lg} {
+			margin-top: 33px;
+		}
+		//
+		&::after {
+			content: '*';
+			margin-left: 5px;
+			color: $color_4;
+		}
+	}
+	//
+	&--input {
+		margin-top: 8px;
+		padding: 7px;
+		height: 41px;
+		width: 100%;
+		border: none;
+		//
+		@media #{$xs} {
+			width: 360px;
+		}
+		//
+		&-small {
+			width: 100px;
+		}
+	}
+	//
+	&--annotation {
+		margin-top: 5px;
+		font-size: 0.8rem;
+	}
+	//
+	&--group {
+		position: relative;
+		width: 100%;
+		//
+		@media #{$xs} {
+			width: 360px;
+		}
+	}
+	//
+	&--surcharge_1 {
+		position: absolute;
+		right: 22px;
+		top: 8px;
+		min-width: 50px;
+		max-width: 200px;
+		height: 41px;
+		text-align: right;
+		line-height: 41px;
+	}
+	//
+	&--surcharge_2 {
+		@extend .calcForm--surcharge_1;
+		right: 0;
+		width: 50%;
+		background: #f1f1f6;
+		padding-right: 30px;
+		color: black;
+	}
+	//
+	&--surcharge_3 {
+		@extend .calcForm--surcharge_2;
+	}
+	&--wrapper {
+		margin-top: 27px;
+		padding-top: 27px;
+		border-top: 1px dotted #aeaeb0;
+		color: black;
+		width: 100%;
+		//
+		@media #{$xs} {
+			width: 360px;
+		}
+	}
+	//
+	&--total {
+		display: inline-block;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+	}
+	//
+	&--sum {
+		display: inline-block;
+		float: right;
+		font-size: 1.4rem;
+		margin-right: 30px;
+	}
+	//
+	&--submit {
+		width: 186px;
+		height: 48px;
+		margin: 35px auto 35px auto;
+		line-height: 48px;
+		font-size: 0.8rem;
+		font-weight: bold;
+		background: none;
+		border: 1px solid $color_4;
+		//
+		@media #{$lg} {
+			margin: 35px 0 35px 0;
+		}
+	}
+	&--col {
+		padding: 0;
+		//
+		@media #{$lg} {
+			padding-right: 0;
+		}
+	}
+	&--img {
+		max-width: 100%;
+		height: auto;
+		//
+		@media #{$xl} {
+			height: 100%;
+		}
+	}
+}

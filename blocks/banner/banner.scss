@@ -1,13 +1,14 @@
 .banner {
 	font-family: $font_2;
 	color: $color_2;
-	//
-	@media #{$xl} {
-		height: 495px;
-	}
+
 	//
 	&--title {
 		text-align: left;
+		//
+		@media #{$lg} {
+			max-width: 60%;
+		}
 	}
 	//
 	&--text {
@@ -21,5 +22,6 @@
 		display: inline-block;
 		outline: 1px solid $color_4 !important;
 		color: $color_4 !important;
+		font-size: 0.8rem;
 	}
 }

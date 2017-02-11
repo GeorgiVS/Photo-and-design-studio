@@ -1408,21 +1408,21 @@ h5 {
 }
 
 h2 {
-  margin: 20px 0 10px 0;
+  margin: 15px 0 10px 0;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 1200px) {
   h2 {
-    margin: 30px 0 20px 0;
+    margin: 30px 0 15px 0;
     font-size: 2.3rem;
   }
 }
 
 @media (min-width: 1500px) {
   h2 {
-    margin: 55px 0 25px 0;
+    margin: 50px 0 25px 0;
     font-size: 2.5rem;
   }
 }
@@ -1443,7 +1443,7 @@ a {
   line-height: 2rem;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 992px) {
   .text p {
     max-width: 50%;
   }
@@ -1633,29 +1633,49 @@ a {
   border-bottom: 1px solid #e0e4e3;
 }
 
-@media (min-width: 1500px) {
-  .layout--interiorDesign {
-    position: relative;
-    z-index: -1;
-    margin-top: -222px;
-    padding-top: 300px;
-  }
+.layout-calculator .layout--breadcrumbs {
+  margin-top: 27px;
 }
 
-.layout--interiorDesign .button {
-  margin-top: 80px;
+.layout-calculator .layout--footer {
+  margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+  .layout-calculator .layout--footer {
+    margin-top: 95px;
+  }
 }
 
 .layout--banner {
   background-size: cover;
+  overflow: hidden;
 }
 
 .layout--banner-aboutUs {
+  max-height: 556px;
   background: url(../../blocks/banner/img/aboutUs.jpg);
 }
 
+@media (min-width: 1200px) {
+  .layout--banner-aboutUs {
+    height: 556px;
+  }
+}
+
 .layout--banner-interiorDesign {
+  max-height: 571px;
   background: url(../../blocks/banner/img/interiorDesign.jpg);
+}
+
+@media (min-width: 1200px) {
+  .layout--banner-interiorDesign {
+    height: 571px;
+  }
+}
+
+.layout--banner-videoShoot {
+  background: url(../../blocks/banner/img/videoShoot.jpg);
 }
 
 .layout--breadcrumbs {
@@ -1668,10 +1688,28 @@ a {
   }
 }
 
+@media (min-width: 1200px) {
+  .layout--breadcrumbs {
+    margin-top: 50px;
+  }
+}
+
 @media (min-width: 1500px) {
   .layout--breadcrumbs {
-    margin-top: 60px;
+    margin-top: 70px;
   }
+}
+
+@media (min-width: 1500px) {
+  .layout--interiorDesign {
+    position: relative;
+    z-index: -1;
+    margin-top: -250px;
+  }
+}
+
+.layout--interiorDesign .button {
+  margin-top: 80px;
 }
 
 @media (min-width: 1200px) {
@@ -1695,22 +1733,6 @@ a {
 @media (min-width: 1500px) {
   .layout--button {
     margin-bottom: 150px;
-  }
-}
-
-.layout--footer {
-  padding: 10px 0;
-}
-
-@media (min-width: 1200px) {
-  .layout--footer {
-    padding: 25px 0;
-  }
-}
-
-@media (min-width: 1500px) {
-  .layout--footer {
-    padding: 50px 0;
   }
 }
 
@@ -1739,12 +1761,12 @@ a {
 }
 
 .layout--sliderPreview {
-  margin: 50px auto 0 auto;
+  margin: 50px auto 25px auto;
 }
 
 @media (min-width: 1500px) {
   .layout--sliderPreview {
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
   }
 }
 
@@ -1792,6 +1814,7 @@ a {
 
 @media (min-width: 768px) {
   .header--social {
+    margin-top: 3px;
     text-align: left;
     line-height: 41px;
   }
@@ -1996,7 +2019,7 @@ a {
 
 .nav--button {
   display: block;
-  margin: 10px auto;
+  margin: 10px auto 15px auto;
   width: 25px;
   height: 20px;
   border-top: 2px solid black;
@@ -2041,12 +2064,13 @@ a {
   position: relative;
   left: 25px;
   list-style: none;
-  margin: 15px auto 0 auto;
+  margin: -10px  auto 0 auto;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
   .nav--menu {
-    margin: 35px 0 0 0;
+    margin: 30px 0 0 0;
     float: right;
   }
 }
@@ -2099,7 +2123,13 @@ a {
 
 @media (min-width: 992px) {
   .nav--menuLink:hover {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav--menuLink:hover {
+    padding-bottom: 19px;
   }
 }
 
@@ -2160,7 +2190,7 @@ a {
 }
 
 .breadcrumbs {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .breadcrumbs--last {
@@ -2326,6 +2356,19 @@ a {
   font: 0.8rem Roboto;
   font-weight: bold;
   color: white;
+  padding: 10px 0;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 25px 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .footer {
+    padding: 50px 0;
+  }
 }
 
 .footer--col_1, .footer--col_2 {
@@ -2457,14 +2500,14 @@ a {
   color: #d4d4d4;
 }
 
-@media (min-width: 1500px) {
-  .banner {
-    height: 495px;
-  }
-}
-
 .banner--title {
   text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .banner--title {
+    max-width: 60%;
+  }
 }
 
 .banner--text {
@@ -2478,6 +2521,7 @@ a {
   display: inline-block;
   outline: 1px solid #00d5e5 !important;
   color: #00d5e5 !important;
+  font-size: 0.8rem;
 }
 
 .column {
@@ -2579,8 +2623,14 @@ a {
 
 .column--colTitle {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0 25px;
+}
+
+@media (min-width: 1200px) {
+  .column--colTitle {
+    font-size: 1.5rem;
+  }
 }
 
 .column--colTitle::before {
@@ -2693,6 +2743,7 @@ a {
 .sliderReviews {
   text-align: center;
   padding-top: 20px;
+  cursor: default;
 }
 
 @media (min-width: 1500px) {
@@ -2809,6 +2860,10 @@ a {
 
 .slide-interiorDesign .slide--text {
   display: none !important;
+}
+
+.slide--row {
+  margin: 0 -15px 0 -15px;
 }
 
 .slide--title {
@@ -3073,4 +3128,195 @@ a {
 
 .price--cost {
   float: right;
+}
+
+.gallery--col {
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  .gallery--col {
+    padding: 15px;
+  }
+}
+
+.gallery--img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .gallery--img {
+    margin: 30px auto 0 auto;
+  }
+}
+
+.calcForm--title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .calcForm--title {
+    margin-bottom: 35px;
+  }
+}
+
+.calcForm--row {
+  background: #e7e7ef;
+}
+
+.calcForm--form {
+  display: table;
+  margin: 0 auto;
+  color: #7d7d7d;
+}
+
+@media (min-width: 1200px) {
+  .calcForm--form {
+    display: block;
+  }
+}
+
+@media (min-width: 1500px) {
+  .calcForm--form {
+    padding-left: 65px;
+  }
+}
+
+.calcForm--inputTitle {
+  color: black;
+  margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+  .calcForm--inputTitle {
+    margin-top: 33px;
+  }
+}
+
+.calcForm--inputTitle::after {
+  content: '*';
+  margin-left: 5px;
+  color: #00d5e5;
+}
+
+.calcForm--input {
+  margin-top: 8px;
+  padding: 7px;
+  height: 41px;
+  width: 100%;
+  border: none;
+}
+
+@media (min-width: 480px) {
+  .calcForm--input {
+    width: 360px;
+  }
+}
+
+.calcForm--input-small {
+  width: 100px;
+}
+
+.calcForm--annotation {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.calcForm--group {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .calcForm--group {
+    width: 360px;
+  }
+}
+
+.calcForm--surcharge_1, .calcForm--surcharge_2, .calcForm--surcharge_3 {
+  position: absolute;
+  right: 22px;
+  top: 8px;
+  min-width: 50px;
+  max-width: 200px;
+  height: 41px;
+  text-align: right;
+  line-height: 41px;
+}
+
+.calcForm--surcharge_2, .calcForm--surcharge_3 {
+  right: 0;
+  width: 50%;
+  background: #f1f1f6;
+  padding-right: 30px;
+  color: black;
+}
+
+.calcForm--wrapper {
+  margin-top: 27px;
+  padding-top: 27px;
+  border-top: 1px dotted #aeaeb0;
+  color: black;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .calcForm--wrapper {
+    width: 360px;
+  }
+}
+
+.calcForm--total {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.calcForm--sum {
+  display: inline-block;
+  float: right;
+  font-size: 1.4rem;
+  margin-right: 30px;
+}
+
+.calcForm--submit {
+  width: 186px;
+  height: 48px;
+  margin: 35px auto 35px auto;
+  line-height: 48px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #00d5e5;
+}
+
+@media (min-width: 1200px) {
+  .calcForm--submit {
+    margin: 35px 0 35px 0;
+  }
+}
+
+.calcForm--col {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .calcForm--col {
+    padding-right: 0;
+  }
+}
+
+.calcForm--img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1500px) {
+  .calcForm--img {
+    height: 100%;
+  }
 }

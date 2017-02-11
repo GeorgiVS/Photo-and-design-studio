@@ -59,30 +59,48 @@
 		}
 	}
 	//
-	&--interiorDesign {
+	&-calculator {
 		//
-		@media #{$xl} {
-			position: relative;
-			z-index: -1;
-			margin-top: -222px;
-			padding-top: 300px;
+		.layout--breadcrumbs {
+			margin-top: 27px;
 		}
-		.button {
-			margin-top: 80px;
+		//
+		.layout--footer {
+			//
+			margin-top: 15px;
+			//
+			@media #{$lg} {
+				margin-top: 95px;
+			}
 		}
 	}
-	//
+	//	
 	/* Элементы */
-	//
+	//	
 	&--banner {
 		background-size: cover;
+		overflow: hidden;
 		//
 		&-aboutUs {
+			max-height: 556px;
 			background: url(../../blocks/banner/img/aboutUs.jpg);
+			//
+			@media #{$lg} {
+				height: 556px;
+			}
 		}
 		//
 		&-interiorDesign {
+			max-height: 571px;
 			background: url(../../blocks/banner/img/interiorDesign.jpg);
+			//
+			@media #{$lg} {
+				height: 571px;
+			}
+		}
+		//
+		&-videoShoot {
+			background: url(../../blocks/banner/img/videoShoot.jpg);
 		}
 	}
 	//
@@ -92,8 +110,23 @@
 		@media #{$sm} {
 			margin-top: 25px;
 		}
+		@media #{$lg} {
+			margin-top: 50px;
+		}
 		@media #{$xl} {
-			margin-top: 60px;
+			margin-top: 70px;
+		}
+	}
+	//
+	&--interiorDesign {
+		//
+		@media #{$xl} {
+			position: relative;
+			z-index: -1;
+			margin-top: -250px;
+		}
+		.button {
+			margin-top: 80px;
 		}
 	}
 	//
@@ -116,18 +149,7 @@
 			margin-bottom: 150px;
 		}
 	}
-	//
-	&--footer {
-		padding: 10px 0;
-		//
-		@media #{$lg} {
-			padding: 25px 0;
-		}
-		@media #{$xl} {
-			padding: 50px 0;
-		}
-	}
-	//
+	//	
 	&--band {
 		margin-top: 50px;
 		//
@@ -135,7 +157,7 @@
 			margin-top: 140px;
 		}
 	}
-	//
+	//	
 	&--collectionLogo {
 		margin-top: 50px;
 		//
@@ -149,10 +171,10 @@
 	}
 	//
 	&--sliderPreview {
-		margin: 50px auto 0 auto;
+		margin: 50px auto 25px auto;
 		//
 		@media #{$xl} {
-			margin: 100px auto 0 auto;
+			margin: 100px auto 100px auto;
 		}
 	}
 	//
