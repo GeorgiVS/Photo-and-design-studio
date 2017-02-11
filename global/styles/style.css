@@ -1748,6 +1748,12 @@ a {
   }
 }
 
+@media (min-width: 1500px) {
+  .layout--price {
+    margin-top: 60px;
+  }
+}
+
 .header {
   font-size: 0.8rem;
   color: #d4d4d4;
@@ -2291,24 +2297,23 @@ a {
 }
 
 .button {
-  display: table;
+  display: block;
+  width: 250px;
+  height: 45px;
+  line-height: 45px;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 5px 10px;
+  text-align: center;
   background: #00d5e5;
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .button {
-    padding: 15px 25px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .button {
-    padding: 25px 55px;
+    width: 395px;
+    height: 71px;
+    line-height: 71px;
   }
 }
 
@@ -3026,4 +3031,46 @@ a {
   max-width: 100%;
   height: auto;
   cursor: pointer;
+}
+
+.price {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.price--title {
+  margin-top: 25px;
+}
+
+@media (min-width: 1500px) {
+  .price--title {
+    margin-top: 100px;
+  }
+}
+
+.price--row {
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #999999;
+}
+
+@media (min-width: 1500px) {
+  .price--row {
+    padding: 30px 0 30px 0;
+    font-size: 1.5rem;
+  }
+}
+
+.price--row-noBorder {
+  border: none;
+  margin-bottom: 60px;
+}
+
+.price--service {
+  float: left;
+}
+
+.price--cost {
+  float: right;
 }

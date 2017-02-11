@@ -155,4 +155,11 @@
 			margin: 100px auto 0 auto;
 		}
 	}
+	//
+	&--price {
+		//
+		@media #{$xl} {
+			margin-top: 60px;
+		}
+	}
 }
