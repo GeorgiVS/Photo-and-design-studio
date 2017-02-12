@@ -1,6 +1,5 @@
 .gallery {
-	//
-	&--row {}
+
 	//
 	&--col {
 		padding: 5px;
@@ -15,7 +14,7 @@
 		max-width: 100%;
 		height: auto;
 		margin: 10px auto 0 auto;
-				//
+		//
 		@media #{$lg} {
 			margin: 30px auto 0 auto;
 		}

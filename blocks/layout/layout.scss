@@ -50,6 +50,9 @@
 		&-grey_2 {
 			background: $colorGrey_2;
 		}
+		&-white {
+			background: white;
+		}
 	}
 	//
 	&-border {
@@ -100,7 +103,12 @@
 		}
 		//
 		&-videoShoot {
+			max-height: 536px;
 			background: url(../../blocks/banner/img/videoShoot.jpg);
+			//
+			@media #{$lg} {
+				height: 536px;
+			}
 		}
 	}
 	//
@@ -183,5 +191,18 @@
 		@media #{$xl} {
 			margin-top: 60px;
 		}
+	}
+	//
+	&--contacts {
+		display: table;
+		margin: 0 auto;
+	}
+	//
+	&--form {
+		margin: 49px auto 50px auto;
+	}
+	//
+	&--gallery {
+			margin: 0 -15px 60px -15px;
 	}
 }

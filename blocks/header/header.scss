@@ -154,17 +154,28 @@
 			margin-right: 0;
 		}
 	}
+
 	//
 	&--menuItem {
 		display: inline-block;
 		color: $color_2 !important;
 		padding: 0 10px;
 		text-align: center;
+		font-weight: bold;
 		background: #2c2c2c;
 		border-bottom: 2px solid transparent;
 		//
 		@media #{$lg} {
 			border-bottom: 4px solid transparent;
+		}
+		//
+		&:last-child {
+			background: $color_4;
+			color: black  !important;
+			//
+			&:hover {
+				color: white !important;
+			}
 		}
 		//
 		&:hover {

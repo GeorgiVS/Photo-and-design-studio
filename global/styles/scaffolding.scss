@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400|Ubuntu:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:300,400|Ubuntu:300&subset=cyrillic');
 html,
 body {
 	height: 100%;
-	font-family: $font_1, sans-serif;
+	font-family: $font_1;
 	font-size: 85%;
 	line-height: 1.5rem;
 	color: $color_1;
@@ -27,7 +27,7 @@ h5 {
 }
 
 h2 {
-	margin: 15px 0 10px 0;
+	margin: 15px 0 15px 0;
 	text-align: center;
 	font-size: 1.6rem;
 	//
@@ -67,4 +67,8 @@ a {
 .row {
 	margin: 0;
 	padding: 0;
+}
+
+.black {
+	background: black;
 }

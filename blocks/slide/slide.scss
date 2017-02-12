@@ -43,7 +43,7 @@
 	}
 	//
 	&--row {
-		margin: 0 -15px 0 -15px;
+		margin: 0 -15px 0 0;
 	}
 	//
 	&--title {
@@ -64,6 +64,9 @@
 		font-family: $font_2;
 		overflow: hidden;
 		//
+		@media #{$sm} {
+			display: block; //For IE
+		}
 		@media #{$xl} {
 			margin-bottom: 30px;
 		}
@@ -106,6 +109,7 @@
 	}
 	//
 	&--img {
+		display: block;
 		max-width: 100%;
 		height: auto;
 	}

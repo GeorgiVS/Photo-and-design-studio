@@ -1,0 +1,38 @@
+._404 {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	background: url(../../blocks/_404/img/img.jpg) no-repeat;
+	background-size: contain;
+	max-width: 663px;
+	height: 589px;
+	//
+	&--text {
+		font-family: $font_2;
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+	//
+	&--link {
+		text-transform: none;
+		color: $color_4 !important;
+	}
+	//
+	&--button {
+		margin: 250px 0 40px 0;
+		padding: 11px 50px;
+		display: inline-block;
+		outline: 1px solid $color_4 !important;
+		color: $color_4 !important;
+		font-size: 0.8rem;
+		font-weight: bold;
+		//
+		@media (min-width: 400px) {
+			margin: 320px 0 40px 0;
+		}
+		@media (min-width: 500px) {
+			margin: 365px 0 40px 0;
+		}
+	}
+}

@@ -1,9 +1,9 @@
-main.banner
+main.banner.js-animate.fadeIn(data-wow-offset="100")
 
 	//Begin breadcrumbs
 	include ../breadcrumbs/breadcrumbs.jade
 	//End breadcrumbs
 				
-	h2.banner--title=bannerTitle
-	.banner--text=bannerText
-	a(href="#").banner--link=bannerLink
+	h2.banner--title.js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.2s")=bannerTitle
+	.banner--text.js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.4s")=bannerText
+	a(href="#").banner--link.js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.6s")=bannerLink

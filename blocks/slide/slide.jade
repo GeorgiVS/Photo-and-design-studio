@@ -1,13 +1,13 @@
-article(class="#{slide}")
+article(class="#{slide}").js-animate.fadeIn(data-wow-offset="100")
 	h2.slide--title=slideTitle
 	.slide--row.row
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.2s")
 			.slide--item
 				img.slide--img(src="#{slideImg_1}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_1
 				.slide--date=slideDate_1
 				a.slide--link(href="#")
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.4s")
 			div(class="#{slideItemAnother}")
 				img.slide--img(src="#{slideImg_2}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_2
@@ -22,27 +22,25 @@ article(class="#{slide}")
 					p
 						Только 2 и 3 апреля. Количество мест ограничено. p. Все подробности по тел. 421-55-88 или в л.с. Marya Korovina
 				a.slide--link(href="#")
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.6s")
 			.slide--item
 				img.slide--img(src="#{slideImg_3}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_3
 				.slide--date=slideDate_3
 				a.slide--link(href="#")
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.8s")
 			.slide--item.slide--item-past
 				img.slide--img(src="#{slideImg_4}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_4
 				.slide--date=slideDate_4
 				a.slide--link(href="#")
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="1s")
 			.slide--item.slide--item-5
 				img.slide--img(src="#{slideImg_5}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_5
 				a.slide--link(href="#")
-		div(class="#{slideCol}")
+		div(class="#{slideCol}").js-animate.fadeIn(data-wow-offset="100" data-wow-delay="1.2s")
 			.slide--item.slide--item-6
 				img.slide--img(src="#{slideImg_6}", alt="Тематическая картинка")
 				.slide--itemTitle=slideItemTitle_6
 				a.slide--link(href="#")
-
-

@@ -24,6 +24,11 @@
 		display: table;
 		margin: 0 auto;
 		transition: 0.5s;
+		filter: grayscale(100%);
+		//
+		&:hover {
+			filter: none;
+		}
 	}
 	&--img {
 		max-width: 100%;

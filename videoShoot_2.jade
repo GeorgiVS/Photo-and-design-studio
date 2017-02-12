@@ -1,12 +1,13 @@
 //- Variables
 - var title = 'Видеосъемка';
-
+- var button = 'Рассчитать стоимость услуги';
 //-Banner
 - var layoutForBanner = 'layout layout-fluid layout--banner-videoShoot';
 - var bannerTitle = 'Профессиональная видеосъёмка в Нижнем Новгороде от «100% ART»';
 - var bannerText = 'Видеосъёмка — это искусство. Придумать сюжет, запечатлеть его развитие, смонтировать и добавить музыкальное оформление — для того, чтобы сделать всё это грамотно, необходимы знания и опыт. Профессиональная видеосъёмка под руководством видеооператора в Нижнем Новгороде проводится недорого в студии «100% ART».'
 
 //-Slide
+- var slideTitle = 'Наши работы';
 - var slide = 'slide row slide-interiorDesign';
 - var slideItemAnother = 'slide--item';
 - var slideCol = 'slide--col col-sm-6';
@@ -23,7 +24,7 @@
 
 //-Column
 - var columnTitle = 'h2 class="column--title"';
-- var columnTitleValue = 'Почему мы';
+- var columnTitleValue = '';
 - var column = 'column row layout--column'
 - var columnCol = 'column--col col-sm-4';
 - var columncolTitle = 'Мы воплощаем идеи любой сложности';
@@ -72,12 +73,14 @@ html(lang="ru")
 						include blocks/banner/banner.jade
 						//End banner
 				
+				.layout.layout-fluid.layout-border-bottom
+					.layout
+				
+						//Begin menu
+						include blocks/menu/menu.jade
+						//End menu
+					
 				.layout
-					
-					//Begin menu
-					include blocks/menu/menu.jade
-					//End menu
-					
 					//Begin slide
 					include blocks/slide/slide.jade
 					//End slide

@@ -1,175 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="global/img/favicon.ico">
-    <title>Калькулятор</title>
-    <link rel="stylesheet" href="global/styles/style.css"><!--[if lt IE 9]>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="global/img/favicon.ico">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="global/styles/style.css">
+	<!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="layout layout-fluid layout-main layout-calculator">
-      <div class="layout layout-fluid layout-content">
-        <div class="layout layout-fluid layout-bg-black">
-          <div class="layout">
-            <!--Begin header-->
-            <header class="header js-animate fadeIn">
-              <div class="header--social col-sm-3 col-lg-2 js-animate fadeIn"><a href="https://www.instagram.com/100art_photography/" title="Мы в Instagram" class="header--socialLink_1"></a><a href="https://www.facebook.com/100photoart" title="Мы в Facebook" class="header--socialLink_2"></a><a href="https://vk.com/image.group.studio" title="Мы в Вконтакте" class="header--socialLink_3"></a></div>
-              <div data-wow-delay="0.3s" class="header--contacts col-sm-5 col-lg-7 js-animate fadeIn">
-                <div class="header--contactsItem_1">603115, Нижний Новгород, Студеная 68А</div>
-                <div class="header--contactsItem_2">admin@100pcent.ru</div>
-                <div class="header--contactsItem_3">8 831 421 55 88, +7 920 018 55 88 </div>
-              </div>
-              <div data-wow-delay="0.6s" class="header--menu col-sm-4 col-lg-3 js-animate fadeIn"><a href="#" class="header--menuItem">Обратный звонок</a><a href="#" class="header--menuItem">Заказать услугу</a></div>
-            </header>
-            <!--End header-->
-          </div>
-        </div>
-        <div class="layout layout-fluid layout-border-bottom layout-fixed">
-          <div class="layout">
-            <!--Begin logo-->
-            <div class="logo"><img src="blocks/header/img/logo.jpg" alt="Логотип" data-wow-delay="0.9s" class="logo--logoImg js-animate pulse">
-              <h1 data-wow-delay="1.2s" class="logo--logoTitle js-animate fadeIn">Photo and design studio</h1>
-            </div>
-            <!--End logo-->
-            <!--Begin nav-->
-            <nav data-wow-delay="1.2s" class="nav js-animate fadeInDown">
-              <h2 class="nav--serviceTitle">Navigation</h2>
-              <input type="checkbox" id="nav--button">
-              <label for="nav--button" class="nav--button"></label>
-              <ul class="nav--menu">
-                <li class="nav--menuItem"><a href="aboutUs.html" class="nav--menuLink">О нас</a></li>
-                <li class="nav--menuItem nav--menuCallSubmenu js-nav--menuCallSubmenu"><a href="#" class="nav--menuLink">Портфолио</a>
-                  <ul class="nav--submenu">
-                    <li class="nav--menuItem"><a href="portfolio.html" class="nav--menuLink">Портфолио</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">BEAUTI</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">FASHION</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Рекламная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Модельные тесты</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Персональная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Уличная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Детская съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Семейная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Беременные</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Свадебная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Каталожная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Меню</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Интерьер & экстерьер</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Предметная съемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Публикации</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Знаменитости</a></li>
-                    <li class="nav--menuItem"><a href="videoShoot_2.html" class="nav--menuLink">Видеосъемка</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Love story</a></li>
-                    <li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Бизнес-портрет</a></li>
-                  </ul>
-                </li>
-                <li class="nav--menuItem"><a href="interiorDesign.html" class="nav--menuLink">Дизайн интерьера</a></li>
-                <li class="nav--menuItem"><a href="videoShoot.html" class="nav--menuLink">Видео</a></li>
-                <li class="nav--menuItem"><a href="actions.html" class="nav--menuLink">Новости</a></li>
-                <li class="nav--menuItem"><a href="calculator.html" class="nav--menuLink">Цены</a></li>
-                <li class="nav--menuItem"><a href="contacts.html" class="nav--menuLink">Контакты</a></li>
-              </ul>
-            </nav>
-            <!--End nav-->
-          </div>
-        </div>
-        <div class="layout">
-          <!--Begin breadcrumbs-->
-          <div class="breadcrumbs layout--breadcrumbs js-animate fadeIn"><span class="breadcrumbs--last">Главная</span><span class="breadcrubms--this">Калькулятор</span></div>
-          <!--End breadcrumbs-->
-          <!--Begin calcForm-->
-          <article data-wow-offset="100" class="calcForm layout--calcForm js-animate fadeIn">
-            <h2 class="calcForm--title">Расчет стоимости</h2>
-            <div class="calcForm--row row">
-              <form data-wow-offset="100" data-wow-delay="0.3s" class="calcForm--form col-lg-4 js-animate fadeIn">
-                <div class="calcForm--inputTitle">Вид работы</div>
-                <select name="Вид работы" class="calcForm--input">
-                  <option value="Портретная съемка">Портретная съемка</option>
-                  <option value="Семейная съемка">Семейная съемка</option>
-                </select>
-                <div class="calcForm--inputTitle">Количество часов</div>
-                <input type="text" required class="calcForm--input calcForm--input-small">
-                <div class="calcForm--annotation">30 мин = 10 обработанных фото + легкая ретушь</div>
-                <div class="calcForm--inputTitle">Место съемки</div>
-                <div class="calcForm--group">
-                  <select name="Место съемки" class="calcForm--input">
-                    <option value="В студии">В студии</option>
-                    <option value="Дома">Дома</option>
-                  </select>
-                  <div class="calcForm--surcharge_1">+0 ₽</div>
-                </div>
-                <div class="calcForm--inputTitle">Макияж, количество человек</div>
-                <div class="calcForm--group">
-                  <input type="text" required class="calcForm--input">
-                  <div class="calcForm--surcharge_2">+5 000 ₽</div>
-                </div>
-                <div class="calcForm--inputTitle">Укладка, количество человек</div>
-                <div class="calcForm--group">
-                  <input type="text" required class="calcForm--input">
-                  <div class="calcForm--surcharge_3">+5 000 ₽</div>
-                </div>
-                <div class="calcForm--wrapper">
-                  <div class="calcForm--total">Итого</div>
-                  <div class="calcForm--sum">10 000 ₽</div>
-                </div>
-                <input type="submit" value="Заказать услугу" class="button calcForm--submit">
-              </form>
-              <div data-wow-offset="100" data-wow-delay="0.3s" class="calcForm--col col-lg-8 js-animate fadeIn"><img src="blocks/calcForm/img/img.jpg" alt="Фотография" class="calcForm--img"></div>
-            </div>
-          </article>
-          <!--End calcForm-->
-        </div>
-      </div>
-      <div data-wow-offset="100" class="layout layout-fluid layout-bg-black layout--footer js-animate fadeIn">
-        <div class="layout">
-          <!--Begin footer-->
-          <footer class="footer">
-            <div data-wow-delay="0.4s" class="footer--col_1 col-sm-4 js-animate fadeIn"><img src="blocks/footer/img/logo.jpg" alt="Логотип" class="footer--logo">
-              <div class="footer--phone">+7(831)421 55 88 
-                <div>+7(920)018 55 88</div>
-              </div>
-              <div class="footer--adress">603105, Нижний Новгород,
-                <div>ул. Студёная, д. 68 "А"</div>
-              </div>
-              <div class="footer--email">admin@100pcent.ru</div>
-            </div>
-            <div data-wow-delay="0.8s" class="footer--col_2 col-sm-6 js-animate fadeIn">
-              <div class="footer--menuWrapper">
-                <ul class="footer--menu">
-                  <li class="footer--menuItem"><a href="aboutUs" class="footer--menuLink">О нас</a></li>
-                  <li class="footer--menuItem"><a href="#" class="footer--menuLink">Фотосъёмка</a></li>
-                  <li class="footer--menuItem"><a href="videoShoot_2.html" class="footer--menuLink">Видесъёмка</a></li>
-                  <li class="footer--menuItem"><a href="interiorDesign.html" class="footer--menuLink"> Дизайн интерьера</a></li>
-                  <li class="footer--menuItem"><a href="rent.html" class="footer--menuLink">Аренда фотостудии</a></li>
-                  <li class="footer--menuItem"><a href="actions.html" class="footer--menuLink">Новости</a></li>
-                  <li class="footer--menuItem"><a href="calculator.html" class="footer--menuLink">Цены</a></li>
-                  <li class="footer--menuItem"><a href="contacts.html" class="footer--menuLink">Контакты</a></li>
-                </ul>
-              </div>
-            </div>
-            <div data-wow-delay="1.2s" class="footer--col_3 col-sm-2 js-animate fadeIn">
-              <div class="footer--copyright">Фотостудия 100%ART
-                <div>&copy; 2015-2017</div>
-              </div>
-              <div class="footer--Rtop">Продвижение: Rtop</div><img src="blocks/footer/img/metrika.jpg" alt="Метрика" class="footer--metrika">
-            </div>
-          </footer>
-          <!--End footer-->
-        </div>
-      </div>
-    </div>
-    <!--Begin scripts-->
-    <!--Scripts-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!--script(src="blocks/header/header.js")-->
-    <script src="global/js/slick.js"></script>
-    <script src="blocks/nav/nav.js"></script>
-    <script src="global/js/wow.js"></script>
-    <!--End scripts-->
-  </body>
+</head>
+
+<body>
+	<div class="layout layout-fluid layout-main layout-calculator">
+		<div class="layout layout-fluid layout-content">
+			<div class="layout layout-fluid layout-bg-black">
+				<div class="layout">
+					<!--Begin header-->
+					<header class="header js-animate fadeIn">
+						<div class="header--social col-sm-3 col-lg-2 js-animate fadeIn">
+							<a href="https://www.instagram.com/100art_photography/" title="Мы в Instagram" class="header--socialLink_1"></a>
+							<a href="https://www.facebook.com/100photoart" title="Мы в Facebook" class="header--socialLink_2"></a>
+							<a href="https://vk.com/image.group.studio" title="Мы в Вконтакте" class="header--socialLink_3"></a>
+						</div>
+						<div data-wow-delay="0.3s" class="header--contacts col-sm-5 col-lg-7 js-animate fadeIn">
+							<div class="header--contactsItem_1">603115, Нижний Новгород, Студеная 68А</div>
+							<div class="header--contactsItem_2">admin@100pcent.ru</div>
+							<div class="header--contactsItem_3">8 831 421 55 88, +7 920 018 55 88 </div>
+						</div>
+						<div data-wow-delay="0.6s" class="header--menu col-sm-4 col-lg-3 js-animate fadeIn"><a href="#" class="header--menuItem">Обратный звонок</a><a href="#" class="header--menuItem">Заказать услугу</a></div>
+					</header>
+					<!--End header-->
+				</div>
+			</div>
+			<div class="layout layout-fluid layout-border-bottom layout-fixed">
+				<div class="layout">
+					<!--Begin logo-->
+					<div class="logo"><img src="blocks/header/img/logo.jpg" alt="Логотип" data-wow-delay="0.9s" class="logo--logoImg js-animate pulse">
+						<h1 data-wow-delay="1.2s" class="logo--logoTitle js-animate fadeIn">Photo and design studio</h1>
+					</div>
+					<!--End logo-->
+					<!--Begin nav-->
+					<nav data-wow-delay="1.2s" class="nav js-animate fadeInDown">
+						<h2 class="nav--serviceTitle">Navigation</h2>
+						<input type="checkbox" id="nav--button">
+						<label for="nav--button" class="nav--button"></label>
+						<ul class="nav--menu">
+							<li class="nav--menuItem"><a href="aboutUs.html" class="nav--menuLink">О нас</a></li>
+							<li class="nav--menuItem nav--menuCallSubmenu js-nav--menuCallSubmenu"><a href="#" class="nav--menuLink">Портфолио</a>
+								<ul class="nav--submenu">
+									<li class="nav--menuItem"><a href="portfolio.html" class="nav--menuLink">Портфолио</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">BEAUTI</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">FASHION</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Рекламная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Модельные тесты</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Персональная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Уличная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Детская съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Семейная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Беременные</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Свадебная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Каталожная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Меню</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Интерьер & экстерьер</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Предметная съемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Публикации</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Знаменитости</a></li>
+									<li class="nav--menuItem"><a href="videoShoot_2.html" class="nav--menuLink">Видеосъемка</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Love story</a></li>
+									<li class="nav--menuItem"><a href="personalShooting.html" class="nav--menuLink">Бизнес-портрет</a></li>
+								</ul>
+							</li>
+							<li class="nav--menuItem"><a href="interiorDesign.html" class="nav--menuLink">Дизайн интерьера</a></li>
+							<li class="nav--menuItem"><a href="videoShoot.html" class="nav--menuLink">Видео</a></li>
+							<li class="nav--menuItem"><a href="actions.html" class="nav--menuLink">Новости</a></li>
+							<li class="nav--menuItem"><a href="calculator.html" class="nav--menuLink">Цены</a></li>
+							<li class="nav--menuItem"><a href="contacts.html" class="nav--menuLink">Контакты</a></li>
+						</ul>
+					</nav>
+					<!--End nav-->
+				</div>
+			</div>
+			<div class="layout">
+				<!--Begin breadcrumbs-->
+				<div class="breadcrumbs layout--breadcrumbs js-animate fadeIn"><span class="breadcrumbs--last">Главная</span><span class="breadcrubms--this">Калькулятор</span></div>
+				<!--End breadcrumbs-->
+				<!--Begin calcForm-->
+				<main data-wow-offset="100" class="calcForm layout--calcForm js-animate fadeIn">
+					<h2 class="calcForm--title">Расчет стоимости</h2>
+					<div class="calcForm--row row">
+						<form data-wow-offset="100" data-wow-delay="0.3s" class="calcForm--form col-lg-4 js-animate fadeIn">
+							<div class="calcForm--inputTitle">Вид работы</div>
+							<select name="Вид работы" class="calcForm--input">
+								<option value="Портретная съемка">Портретная съемка</option>
+								<option value="Семейная съемка">Семейная съемка</option>
+							</select>
+							<div class="calcForm--inputTitle">Количество часов</div>
+							<input type="text" required class="calcForm--input calcForm--input-small">
+							<div class="calcForm--annotation">30 мин = 10 обработанных фото + легкая ретушь</div>
+							<div class="calcForm--inputTitle">Место съемки</div>
+							<div class="calcForm--group">
+								<select name="Место съемки" class="calcForm--input">
+									<option value="В студии">В студии</option>
+									<option value="Дома">Дома</option>
+								</select>
+								<div class="calcForm--surcharge_1">+0 ₽</div>
+							</div>
+							<div class="calcForm--inputTitle">Макияж, количество человек</div>
+							<div class="calcForm--group">
+								<input type="text" required class="calcForm--input">
+								<div class="calcForm--surcharge_2">+5 000 ₽</div>
+							</div>
+							<div class="calcForm--inputTitle">Укладка, количество человек</div>
+							<div class="calcForm--group">
+								<input type="text" required class="calcForm--input">
+								<div class="calcForm--surcharge_3">+5 000 ₽</div>
+							</div>
+							<div class="calcForm--wrapper">
+								<div class="calcForm--total">Итого</div>
+								<div class="calcForm--sum">10 000 ₽</div>
+							</div>
+							<input type="submit" value="Заказать услугу" class="button calcForm--submit">
+						</form>
+						<div data-wow-offset="100" data-wow-delay="0.3s" class="calcForm--col col-lg-8 js-animate fadeIn"><img src="blocks/calcForm/img/img.jpg" alt="Фотография" class="calcForm--img"></div>
+					</div>
+				</main>
+				<!--End calcForm-->
+			</div>
+		</div>
+		<div data-wow-offset="100" class="layout layout-fluid layout-bg-black layout--footer js-animate fadeIn">
+			<div class="layout">
+				<!--Begin footer-->
+				<footer class="footer">
+					<div data-wow-delay="0.4s" class="footer--col_1 col-sm-4 js-animate fadeIn"><img src="blocks/footer/img/logo.jpg" alt="Логотип" class="footer--logo">
+						<div class="footer--phone">+7(831)421 55 88
+							<div>+7(920)018 55 88</div>
+						</div>
+						<div class="footer--adress">603105, Нижний Новгород,
+							<div>ул. Студёная, д. 68 "А"</div>
+						</div>
+						<div class="footer--email">admin@100pcent.ru</div>
+					</div>
+					<div data-wow-delay="0.8s" class="footer--col_2 col-sm-6 js-animate fadeIn">
+						<div class="footer--menuWrapper">
+							<ul class="footer--menu">
+								<li class="footer--menuItem"><a href="aboutUs" class="footer--menuLink">О нас</a></li>
+								<li class="footer--menuItem"><a href="#" class="footer--menuLink">Фотосъёмка</a></li>
+								<li class="footer--menuItem"><a href="videoShoot_2.html" class="footer--menuLink">Видесъёмка</a></li>
+								<li class="footer--menuItem"><a href="interiorDesign.html" class="footer--menuLink"> Дизайн интерьера</a></li>
+								<li class="footer--menuItem"><a href="rent.html" class="footer--menuLink">Аренда фотостудии</a></li>
+								<li class="footer--menuItem"><a href="actions.html" class="footer--menuLink">Новости</a></li>
+								<li class="footer--menuItem"><a href="calculator.html" class="footer--menuLink">Цены</a></li>
+								<li class="footer--menuItem"><a href="contacts.html" class="footer--menuLink">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div data-wow-delay="1.2s" class="footer--col_3 col-sm-2 js-animate fadeIn">
+						<div class="footer--copyright">Фотостудия 100%ART
+							<div>&copy; 2015-2017</div>
+						</div>
+						<div class="footer--Rtop">Продвижение: Rtop</div><img src="blocks/footer/img/metrika.jpg" alt="Метрика" class="footer--metrika">
+					</div>
+				</footer>
+				<!--End footer-->
+			</div>
+		</div>
+	</div>
+	<!--Begin scripts-->
+	<!--Scripts-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="blocks/layout/layout.js"></script>
+	<script src="global/js/slick.js"></script>
+	<script src="blocks/nav/nav.js"></script>
+	<script src="global/js/wow.js"></script>
+	<!--End scripts-->
+</body>
+
 </html>
