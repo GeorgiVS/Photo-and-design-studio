@@ -15,7 +15,7 @@
 			}
 			//
 			&::before {
-				background-position: -135px -206px;
+				background-position: -135px -209px;
 				//
 				@media #{$lg} {
 					background-position: -279px -113px;
@@ -26,7 +26,7 @@
 		.column--colTitle-2 {
 			//
 			&::before {
-				background-position: -180px -206px;
+				background-position: -180px -209px;
 				//
 				@media #{$lg} {
 					background-position: -372px -113px;
@@ -37,7 +37,7 @@
 		.column--colTitle-3 {
 			//
 			&::before {
-				background-position: -225px -206px;
+				background-position: -225px -209px;
 				//
 				@media #{$lg} {
 					background-position: -465px -113px;
@@ -49,7 +49,7 @@
 			display: block;
 			//
 			&::before {
-				background-position: -270px -206px;
+				background-position: -270px -209px;
 				//
 				@media #{$lg} {
 					background-position: -558px -113px;
@@ -88,7 +88,7 @@
 			margin: 20px auto 5px auto;
 			width: 45px;
 			height: 45px;
-			background: $sprite 0 -206px;
+			background: $sprite 0 -209px;
 			//
 			@media #{$sm} {
 				margin: 15px auto;
@@ -98,19 +98,19 @@
 				width: 93px;
 				height: 93px;
 				margin: 55px auto 40px auto;
-				background-position: 0 -113px;
+				background-position: 0 -115px;
 			}
 		}
 		//
 		&-2 {
 			//
 			&::before {
-				background-position: -45px -206px;
+				background-position: -45px -209px;
 				//
 				@media #{$lg} {
 					width: 93px;
 					height: 93px;
-					background-position: -93px -113px;
+					background-position: -93px -115px;
 				}
 			}
 		}
@@ -118,12 +118,12 @@
 		&-3 {
 			//
 			&::before {
-				background-position: -90px -206px;
+				background-position: -90px -209px;
 				//
 				@media #{$lg} {
 					width: 93px;
 					height: 93px;
-					background-position: -93px -113px;
+					background-position: -93px -115px;
 				}
 			}
 		}

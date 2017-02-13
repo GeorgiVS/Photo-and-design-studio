@@ -1490,51 +1490,51 @@ a {
 @media (min-width: 1200px) {
   .slick-prev,
   .slick-next {
-    height: 56px;
     width: 56px;
+    height: 56px;
   }
 }
 
 .slick-prev {
   top: 50px;
   right: 0;
-  background: url(../img/sprite.png) no-repeat 0 -88px;
+  background: url(../img/sprite.png) no-repeat 0 -89px;
   transform: rotate(180deg);
 }
 
 .slick-prev:hover {
-  background-position: -25px -88px;
+  background-position: -25px -89px;
 }
 
 @media (min-width: 1200px) {
   .slick-prev {
     top: 80px;
     right: -90px;
-    background-position: 0 -32px;
+    background-position: 0 -33px;
   }
   .slick-prev:hover {
-    background-position: -56px -32px;
+    background-position: -56px -33px;
   }
 }
 
 .slick-next {
   top: 25px;
   right: 0;
-  background: url(../img/sprite.png) no-repeat 0 -88px;
+  background: url(../img/sprite.png) no-repeat 0 -89px;
 }
 
 .slick-next:hover {
-  background-position: -25px -88px;
+  background-position: -25px -89px;
 }
 
 @media (min-width: 1200px) {
   .slick-next {
     top: 25px;
     right: -90px;
-    background-position: 0 -32px;
+    background-position: 0 -33px;
   }
   .slick-next:hover {
-    background-position: -56px -32px;
+    background-position: -56px -33px;
   }
 }
 
@@ -1970,7 +1970,7 @@ a {
 }
 
 .column-rent .column--colTitle::before {
-  background-position: -135px -206px;
+  background-position: -135px -209px;
 }
 
 @media (min-width: 1200px) {
@@ -1980,7 +1980,7 @@ a {
 }
 
 .column-rent .column--colTitle-2::before {
-  background-position: -180px -206px;
+  background-position: -180px -209px;
 }
 
 @media (min-width: 1200px) {
@@ -1990,7 +1990,7 @@ a {
 }
 
 .column-rent .column--colTitle-3::before {
-  background-position: -225px -206px;
+  background-position: -225px -209px;
 }
 
 @media (min-width: 1200px) {
@@ -2004,7 +2004,7 @@ a {
 }
 
 .column-rent .column--colTitle-4::before {
-  background-position: -270px -206px;
+  background-position: -270px -209px;
 }
 
 @media (min-width: 1200px) {
@@ -2052,7 +2052,7 @@ a {
   margin: 20px auto 5px auto;
   width: 45px;
   height: 45px;
-  background: url(../img/sprite.png) 0 -206px;
+  background: url(../img/sprite.png) 0 -209px;
 }
 
 @media (min-width: 768px) {
@@ -2067,31 +2067,31 @@ a {
     width: 93px;
     height: 93px;
     margin: 55px auto 40px auto;
-    background-position: 0 -113px;
+    background-position: 0 -115px;
   }
 }
 
 .column--colTitle-2::before {
-  background-position: -45px -206px;
+  background-position: -45px -209px;
 }
 
 @media (min-width: 1200px) {
   .column--colTitle-2::before {
     width: 93px;
     height: 93px;
-    background-position: -93px -113px;
+    background-position: -93px -115px;
   }
 }
 
 .column--colTitle-3::before {
-  background-position: -90px -206px;
+  background-position: -90px -209px;
 }
 
 @media (min-width: 1200px) {
   .column--colTitle-3::before {
     width: 93px;
     height: 93px;
-    background-position: -93px -113px;
+    background-position: -93px -115px;
   }
 }
 
