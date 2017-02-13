@@ -1,0 +1,50 @@
+//- Variables
+- var title = 'Страница не найдена';
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="global/img/favicon.ico")
+		title=title
+		link(rel="stylesheet", href="global/styles/style.css")
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	body.black
+		.layout.layout-fluid.layout-main
+			.layout.layout-fluid.layout-content
+				.layout.layout-fluid.layout-bg-black
+					.layout
+					
+						//Begin header
+						include blocks/header/header.jade
+						//End header
+						
+				.layout.layout-fluid.layout-border-bottom.layout-fixed.layout-bg-white
+					.layout
+					
+						//Begin logo
+						include blocks/logo/logo.jade
+						//End logo
+						
+						//Begin nav
+						include blocks/nav/nav.jade
+						//End nav
+						
+				.layout.layout-fluid.layout-bg-black
+					.layout
+				
+						//Begin _404
+						include blocks/_404/_404.jade
+						//End _404
+				
+						//Begin footer
+						include blocks/footer/footer.jade
+						//End footer
+
+		//Begin scripts
+		include blocks/scripts/scripts.jade
+		//End scripts
