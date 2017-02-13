@@ -2138,27 +2138,27 @@ a {
   margin-right: 20px;
   width: 70px;
   height: 70px;
-  background: url(../img/sprite.png) 0px 175px;
+  background: url(../img/sprite.png) 0px 140px;
 }
 
 .contacts--link:hover {
-  background-position: 0px 105px;
+  background-position: 0px 70px;
 }
 
 .contacts--link:nth-child(3) {
-  background-position: -70px 175px;
+  background-position: -70px 140px;
 }
 
 .contacts--link:nth-child(3):hover {
-  background-position: -70px 105px;
+  background-position: -70px 70px;
 }
 
 .contacts--link:last-child {
-  background-position: -140px 175px;
+  background-position: -140px 140px;
 }
 
 .contacts--link:last-child:hover {
-  background-position: -140px 105px;
+  background-position: -140px 70px;
 }
 
 .footer {

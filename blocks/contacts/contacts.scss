@@ -30,25 +30,25 @@
 		margin-right: 20px;
 		width: 70px;
 		height: 70px;
-		background: $sprite 0px 175px;
+		background: $sprite 0px 140px;
 		//
 		&:hover {
-			background-position: 0px 105px;
+			background-position: 0px 70px;
 		}
 		//
 		&:nth-child(3) {
-			background-position: -70px 175px;
+			background-position: -70px 140px;
 			//
 			&:hover {
-				background-position: -70px 105px;
+				background-position: -70px 70px;
 			}
 		}
 		//
 		&:last-child {
-			background-position: -140px 175px;
+			background-position: -140px 140px;
 			//
 			&:hover {
-				background-position: -140px 105px;
+				background-position: -140px 70px;
 			}
 		}
 	}
