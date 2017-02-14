@@ -3758,6 +3758,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   min-height: 100%;
 }
 
+.layout-fixed {
+  z-index: 1000;
+}
+
 .layout-fixed-active {
   position: fixed;
   width: 100%;
