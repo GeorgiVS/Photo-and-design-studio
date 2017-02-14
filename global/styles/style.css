@@ -3817,7 +3817,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .layout--banner-aboutUs {
   max-height: 556px;
-  background: url(../../blocks/banner/img/aboutUs.jpg);
+  background: url(../../blocks/banner/img/aboutUs.jpg) no-repeat center 0;
 }
 
 @media (min-width: 1200px) {
@@ -3828,7 +3828,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .layout--banner-interiorDesign {
   max-height: 571px;
-  background: url(../../blocks/banner/img/interiorDesign.jpg);
+  background: url(../../blocks/banner/img/interiorDesign.jpg) no-repeat center 0;
 }
 
 @media (min-width: 1200px) {
@@ -3839,7 +3839,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .layout--banner-videoShoot {
   max-height: 536px;
-  background: url(../../blocks/banner/img/videoShoot.jpg);
+  background: url(../../blocks/banner/img/videoShoot.jpg) no-repeat center 0;
 }
 
 @media (min-width: 1200px) {

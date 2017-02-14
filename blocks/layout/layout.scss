@@ -32,7 +32,6 @@
 		z-index: 1000;
 		&-active {
 			position: fixed;
-			
 			width: 100%;
 			padding: 0;
 			top: 0;
@@ -64,7 +63,7 @@
 			border-bottom: 1px solid $color_5;
 		}
 	}
-	&-zIndex{
+	&-zIndex {
 		z-index: 20;
 	}
 	//
@@ -92,7 +91,7 @@
 		//
 		&-aboutUs {
 			max-height: 556px;
-			background: url(../../blocks/banner/img/aboutUs.jpg);
+			background: url(../../blocks/banner/img/aboutUs.jpg) no-repeat center 0;
 			//
 			@media #{$lg} {
 				height: 556px;
@@ -101,7 +100,7 @@
 		//
 		&-interiorDesign {
 			max-height: 571px;
-			background: url(../../blocks/banner/img/interiorDesign.jpg);
+			background: url(../../blocks/banner/img/interiorDesign.jpg) no-repeat center 0;
 			//
 			@media #{$lg} {
 				height: 571px;
@@ -110,7 +109,7 @@
 		//
 		&-videoShoot {
 			max-height: 536px;
-			background: url(../../blocks/banner/img/videoShoot.jpg);
+			background: url(../../blocks/banner/img/videoShoot.jpg) no-repeat center 0;
 			//
 			@media #{$lg} {
 				height: 536px;
