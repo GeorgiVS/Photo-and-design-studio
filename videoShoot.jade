@@ -1,6 +1,47 @@
 //- Variables
 - var title = 'Видеосъемка';
 - var button = 'Рассчитать стоимость услуги';
+- var buttonLink = 'calculator.html';
+//-Banner
+- var layoutForBanner = 'layout layout-fluid layout--banner-videoShoot';
+- var bannerTitle = 'Профессиональная видеосъёмка в Нижнем Новгороде от «100% ART»';
+- var bannerText = 'Видеосъёмка — это искусство. Придумать сюжет, запечатлеть его развитие, смонтировать и добавить музыкальное оформление — для того, чтобы сделать всё это грамотно, необходимы знания и опыт. Профессиональная видеосъёмка под руководством видеооператора в Нижнем Новгороде проводится недорого в студии «100% ART».'
+
+//-Slide
+- var slideTitle = 'Наши работы';
+- var slide = 'slide row slide-videoShoot';
+- var slideItemAnother = 'slide--item';
+- var slideCol = 'slide--col col-sm-6';
+- var slideLink = 'videoShoot-inner.html';
+- var slideImg_1 = 'blocks/slide/img/videoShoot_1.jpg';
+- var slideImg_2 = 'blocks/slide/img/videoShoot_2.jpg';
+- var slideImg_3 = 'blocks/slide/img/videoShoot_3.jpg';
+- var slideImg_4 = 'blocks/slide/img/videoShoot_4.jpg';
+- var slideImg_5 = 'blocks/slide/img/interiorDesign_4.jpg';
+- var slideImg_6 = 'blocks/slide/img/interiorDesign_4.jpg';
+- var slideItemTitle_1 = 'Time';
+- var slideItemTitle_2 = '100%ART for fashion';
+- var slideItemTitle_3 = 'illusion for image journal #10';
+- var slideItemTitle_4 = 'image journal';
+- var slideDate_1 = '2:18';
+- var slideDate_2 = '2:18';
+- var slideDate_3 = '2:18';
+- var slideDate_4 = '2:18';
+
+//-Column
+- var columnTitle = 'h2 class="column--title"';
+- var columnTitleValue = '';
+- var column = 'column row layout--column'
+- var columnCol = 'column--col col-sm-4';
+- var columncolTitle = 'Мы воплощаем идеи любой сложности';
+- var columncolTitle_2 = 'Приемлемая цена';
+- var columncolTitle_3 = 'Виды съемки';
+- var bannerLink = 'Смотреть работы';
+
+//- Button
+- var button = 'Рассчитать стоимость услуги';
+- var buttonLink = 'calculator.html';
+
 doctype html
 html(lang="ru")
 	head
@@ -34,30 +75,37 @@ html(lang="ru")
 						//Begin nav
 						include blocks/nav/nav.jade
 						//End nav
+						
+				div(class="#{layoutForBanner}")
+					.layout
 			
-				.layout
-			
-					//Begin breadcrumbs
-					include blocks/breadcrumbs/breadcrumbs.jade
-					//End breadcrumbs
-			
-					//Begin videoContent
-					include blocks/videoContent/videoContent.jade
-					//End videoContent
+						//Begin banner
+						include blocks/banner/banner.jade
+						//End banner
 				
-				.layout.layout-fluid.layout-bg-black.layout--section
+				.layout.layout-fluid.layout-border-bottom
 					.layout
 				
-						//Begin videoContent_2
-						include blocks/videoContent_2/videoContent_2.jade
-						//End videoContent_2
+						//Begin menu
+						include blocks/menu/menu.jade
+						//End menu
+					
+				.layout.layout-zIndex
+					//Begin slide
+					include blocks/slide/slide.jade
+					//End slide
+						
+				.layout.layout-fluid.layout-bg-grey.layout--rise
+					.layout
 				
-				.layout
-				
-					//Begin button
-					include blocks/button/button.jade
-					//End button
-				
+						//Begin column
+						include blocks/column/column.jade
+						//End column
+
+						//Begin button
+						include blocks/button/button.jade
+						//End button
+			
 			.layout.layout-fluid.layout-bg-black.layout--footer.js-animate.fadeIn(data-wow-offset="100")
 				.layout
 			

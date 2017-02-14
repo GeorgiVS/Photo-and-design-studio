@@ -7,25 +7,25 @@ main.calcForm.layout--calcForm.js-animate.fadeIn(data-wow-offset="100")
 				option(value="Портретная съемка") Портретная съемка
 				option(value="Семейная съемка") Семейная съемка
 			.calcForm--inputTitle Количество часов
-			input.calcForm--input.calcForm--input-small(type="text" required)
+			input.calcForm--input.calcForm--input-small(type="number" required)
 			.calcForm--annotation 30 мин = 10 обработанных фото + легкая ретушь
 			.calcForm--inputTitle Место съемки
 			.calcForm--group
 				select.calcForm--input(name="Место съемки")
 					option(value="В студии") В студии
 					option(value="Дома") Дома
-				.calcForm--surcharge_1 +0 ₽
+				.calcForm--surcharge_1 +0 &#8381;
 			.calcForm--inputTitle Макияж, количество человек
 			.calcForm--group
-				input.calcForm--input(type="text" required)
-				.calcForm--surcharge_2 +5 000 ₽
+				input.calcForm--input(type="number" required)
+				.calcForm--surcharge_2 +5 000 &#8381;
 			.calcForm--inputTitle Укладка, количество человек
 			.calcForm--group
-				input.calcForm--input(type="text" required)
-				.calcForm--surcharge_3 +5 000 ₽
+				input.calcForm--input(type="number" required)
+				.calcForm--surcharge_3 +5 000 &#8381;
 			.calcForm--wrapper
 				.calcForm--total Итого
-				.calcForm--sum 10 000 ₽
-			input.button.calcForm--submit(type="submit" value="Заказать услугу")
+				.calcForm--sum 10 000 &#8381;
+			input.calcForm--submit(type="submit" value="Заказать услугу")
 		.calcForm--col.col-lg-8.js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.3s")
 			img.calcForm--img(src="blocks/calcForm/img/img.jpg", alt="Фотография")

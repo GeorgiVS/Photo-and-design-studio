@@ -24,5 +24,11 @@
 		color: $color_4 !important;
 		font-size: 0.8rem;
 		font-weight: bold;
+		transition: .5s;
+		//
+		&:hover {
+			background: $color_4;
+			color: black !important;
+		}
 	}
 }

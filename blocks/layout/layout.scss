@@ -36,6 +36,7 @@
 			top: 0;
 			z-index: 100;
 			background: white;
+			transition: 0.5s;
 		}
 	}
 	//
@@ -60,6 +61,9 @@
 		&-bottom {
 			border-bottom: 1px solid $color_5;
 		}
+	}
+	&-zIndex{
+		z-index: 20;
 	}
 	//
 	&-calculator {
@@ -126,11 +130,11 @@
 		}
 	}
 	//
-	&--interiorDesign {
+	&--rise {
 		//
 		@media #{$xl} {
 			position: relative;
-			z-index: -1;
+			z-index: 10;
 			margin-top: -250px;
 		}
 		.button {
@@ -203,6 +207,17 @@
 	}
 	//
 	&--gallery {
-			margin: 0 -15px 60px -15px;
+		margin: 0 -15px 60px -15px;
+	}
+	//
+	&--footer {
+		padding: 10px 0;
+		//
+		@media #{$lg} {
+			padding: 25px 0;
+		}
+		@media #{$xl} {
+			padding: 50px 0;
+		}
 	}
 }

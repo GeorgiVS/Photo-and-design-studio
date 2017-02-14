@@ -52,17 +52,23 @@
 	}
 	//
 	&--submit {
+
 		width: 186px;
 		height: 48px;
-		margin: 35px 0 0 0;
+		margin: 35px 0 35px 0;
+		padding: 0;
 		line-height: 48px;
+		background: none;
+		border: 1px solid $color_4 !important;
+		color: black !important;
 		font-size: 0.8rem;
 		font-weight: bold;
-		background: none;
-		border: 1px solid $color_4;
+		text-transform: uppercase;
+		transition: .5s;
 		//
-		@media #{$lg} {
-			margin: 35px 0 35px 0;
+		&:hover {
+			background: $color_4;
+			color: black !important;
 		}
 	}
 }

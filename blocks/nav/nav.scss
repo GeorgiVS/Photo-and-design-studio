@@ -1,5 +1,4 @@
 .nav {
-
 	//
 	@media #{$sm} {
 		height: 68px;
@@ -18,6 +17,8 @@
 	}
 	//
 	&--button {
+		position: relative;
+		z-index: 100;
 		display: block;
 		margin: 10px auto 15px auto;
 		width: 25px;
@@ -59,7 +60,7 @@
 		position: relative;
 		left: 25px;
 		list-style: none;
-		margin: -10px  auto 0 auto;
+		margin: -10px auto 0 auto;
 		padding-bottom: 5px;
 		//
 		@media #{$sm} {
@@ -102,7 +103,7 @@
 			@media #{$md} {
 				padding-bottom: 22px;
 			}
-						@media #{$lg} {
+			@media #{$lg} {
 				padding-bottom: 19px;
 			}
 		}
@@ -121,6 +122,14 @@
 			border-top: 4px solid $color_1;
 		}
 		//
+		@media #{$md} {
+			&:hover .nav--submenu {
+				overflow: visible;
+				height: auto;
+				opacity: 1;
+				padding: 5px 15px;
+			}
+		}
 		@media #{$lg} {
 			width: 125px;
 		}
@@ -136,11 +145,12 @@
 		opacity: 0;
 		list-style: none;
 		background: white;
+		transition: 0.8s;
 		//
 		&-active {
-			padding: 5px 15px;
 			height: auto;
 			opacity: 1;
+			padding: 5px 15px;
 		}
 		//
 		@media #{$md} {
@@ -155,9 +165,7 @@
 		}
 		//
 		.nav--menuLink {
-			&:hover {
-				border: none;
-			}
+			padding: 0;
 		}
 	}
 }

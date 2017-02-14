@@ -82,6 +82,10 @@
 			font-size: 1.5rem;
 		}
 		//
+		&:hover::before {
+			transform: scale(0.9);
+		}
+		//
 		&::before {
 			content: '';
 			display: table;
@@ -89,6 +93,7 @@
 			width: 45px;
 			height: 45px;
 			background: $sprite 0 -209px;
+			transition: .5s;
 			//
 			@media #{$sm} {
 				margin: 15px auto;
@@ -123,7 +128,7 @@
 				@media #{$lg} {
 					width: 93px;
 					height: 93px;
-					background-position: -93px -115px;
+					background-position: -186px -113px;
 				}
 			}
 		}

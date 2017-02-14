@@ -9,6 +9,7 @@
 	text-align: center;
 	background: $color_4;
 	cursor: pointer;
+	transition: .5s;
 	//
 	@media #{$lg} {
 		width: 395px;
