@@ -162,7 +162,11 @@
 		}
 		//
 		.nav--menuLink {
-			padding: 0;
+			//
+			&:hover {
+				border: none;
+				color: $color_4 !important;
+			}
 		}
 	}
 }

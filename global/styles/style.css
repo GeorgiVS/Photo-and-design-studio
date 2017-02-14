@@ -4241,8 +4241,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-right: 0;
 }
 
-.nav--submenu .nav--menuLink {
-  padding: 0;
+.nav--submenu .nav--menuLink:hover {
+  border: none;
+  color: #00d5e5 !important;
 }
 
 .pagination {
