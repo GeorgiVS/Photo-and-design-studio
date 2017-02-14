@@ -1,9 +1,9 @@
 form.form.layout--form.col-sm-4.js-animate.fadeIn(data-wow-offset="100" data-wow-delay="0.2s")
 	h2.form--title Написать нам
-	input.form--input(type="text" placeholder="Ваше имя")
-	input.form--input(type="email" placeholder="Электронная почта")
-	input.form--input(type="text" placeholder="Тема письма")
-	textarea.form--textarea(name="textarea", cols="30", rows="10" placeholder="Сообщение")
+	input.form--input(type="text" placeholder="Ваше имя" required)
+	input.form--input(type="email" placeholder="Электронная почта" required)
+	input.form--input(type="text" placeholder="Тема письма" required)
+	textarea.form--textarea(name="textarea", cols="30", rows="10" placeholder="Сообщение" required)
 	input.form--input.form--input-code(type="text" placeholder="Введите код")
 	.form--captcha
 	input.form--submit(type="submit" value="Отправить")
