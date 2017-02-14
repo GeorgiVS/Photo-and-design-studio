@@ -50,7 +50,7 @@
 	}
 	//
 	&--row {
-		margin: 0 -15px 0 -15px;
+		margin: 0 -15px 0 0;
 	}
 	//
 	&--title {
@@ -61,19 +61,23 @@
 			margin-bottom: 69px;
 		}
 	}
+	&--col {
+				display: table;
+		margin: 0 auto;
+				//
+		@media #{$sm} {
+			display: block; //For IE
+		}
+	}
 	//
 	&--item {
-		display: table;
-		margin: 0 auto;
+		
 		margin-bottom: 15px;
 		color: white;
 		position: relative;
 		font-family: $font_2;
 		overflow: hidden;
-		//
-		@media #{$sm} {
-			display: block; //For IE
-		}
+
 		@media #{$xl} {
 			margin-bottom: 30px;
 		}
@@ -109,7 +113,7 @@
 	}
 	//
 	&--img {
-		display: block;
+display: block;
 		max-width: 100%;
 		height: auto;
 	}
