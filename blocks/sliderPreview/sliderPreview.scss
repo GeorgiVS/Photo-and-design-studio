@@ -1,19 +1,16 @@
 .sliderPreview {
 	max-width: 1270px;
 	//
-	&--nav {
-		max-width: 1270px;
-		margin: 34px auto 50px auto;
-		//
-	}
-}
-
-.sliderPreview--nav {
-	//
 	.sliderPreview--img {
 		display: block;
 		max-width: 100%;
 		height: auto;
 		cursor: pointer;
+	}
+	//
+	&--nav {
+		max-width: 1270px;
+		margin: 34px auto 50px auto;
+		//
 	}
 }

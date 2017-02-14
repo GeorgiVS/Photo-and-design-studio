@@ -1,13 +1,5 @@
 .gallery {
 	//
-	&--col {
-		padding: 5px;
-		//
-		@media #{$lg} {
-			padding: 15px;
-		}
-	}
-	//
 	&--img {
 		display: block;
 		max-width: 100%;

@@ -2913,7 +2913,7 @@ $(document).ready(function () {
 
 	$('.js-sliderPreview--slider').slick({
 		slidesToShow: 1,
-		fade: true,
+
 		asNavFor: '.js-sliderPreview--nav'
 	});
 

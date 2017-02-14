@@ -27,12 +27,18 @@
 		color: $color_4 !important;
 		font-size: 0.8rem;
 		font-weight: bold;
+		transition: .5s;
 		//
 		@media (min-width: 400px) {
 			margin: 320px 0 40px 0;
 		}
 		@media (min-width: 500px) {
 			margin: 365px 0 40px 0;
+		}
+		//
+		&:hover {
+			background: $color_4;
+			color: black !important;
 		}
 	}
 }
