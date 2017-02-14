@@ -3098,32 +3098,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .column-rent .column--colTitle::before {
-  background-position: -135px -123px;
+  background-position: -135px -127px;
 }
 
 @media (min-width: 1200px) {
   .column-rent .column--colTitle::before {
-    background-position: -279px -29px;
+    background-position: -279px -33px;
   }
 }
 
 .column-rent .column--colTitle-2::before {
-  background-position: -180px -123px;
+  background-position: -180px -127px;
 }
 
 @media (min-width: 1200px) {
   .column-rent .column--colTitle-2::before {
-    background-position: -372px -29px;
+    background-position: -372px -33px;
   }
 }
 
 .column-rent .column--colTitle-3::before {
-  background-position: -225px -123px;
+  background-position: -225px -127px;
 }
 
 @media (min-width: 1200px) {
   .column-rent .column--colTitle-3::before {
-    background-position: -465px -29px;
+    background-position: -465px -33px;
   }
 }
 
@@ -3132,12 +3132,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .column-rent .column--colTitle-4::before {
-  background-position: -270px -123px;
+  background-position: -270px -127px;
 }
 
 @media (min-width: 1200px) {
   .column-rent .column--colTitle-4::before {
-    background-position: -558px -29px;
+    background-position: -558px -33px;
   }
 }
 
@@ -3184,7 +3184,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 20px auto 5px auto;
   width: 45px;
   height: 45px;
-  background: url(../img/sprite.png) 0 -123px;
+  background: url(../img/sprite.png) 0 -127px;
   transition: .5s;
 }
 
@@ -3200,31 +3200,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: 93px;
     height: 93px;
     margin: 55px auto 40px auto;
-    background-position: 0 -29px;
+    background-position: 0 -33px;
   }
 }
 
 .column--colTitle-2::before {
-  background-position: -45px -123px;
+  background-position: -45px -127px;
 }
 
 @media (min-width: 1200px) {
   .column--colTitle-2::before {
     width: 93px;
     height: 93px;
-    background-position: -93px -29px;
+    background-position: -93px -33px;
   }
 }
 
 .column--colTitle-3::before {
-  background-position: -90px -123px;
+  background-position: -90px -127px;
 }
 
 @media (min-width: 1200px) {
   .column--colTitle-3::before {
     width: 93px;
     height: 93px;
-    background-position: -186px -29px;
+    background-position: -186px -33px;
   }
 }
 
